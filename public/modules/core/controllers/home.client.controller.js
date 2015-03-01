@@ -36,7 +36,7 @@ app.directive("calendar", function() {
 
             scope.next = function() {
                 var next = scope.month.clone();
-                _removeTime(next.month(next.month()+1)).date(1));
+                _removeTime(next.month(next.month()+1)).date(1);
                 scope.month.month(scope.month.month()+1);
                 _buildMonth(scope, next, scope.month);
             };
