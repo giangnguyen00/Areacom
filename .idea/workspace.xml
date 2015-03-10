@@ -2,7 +2,256 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="428da9cc-b56f-46f1-b377-ba9386e77cd6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/customers/css/customers.css" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\fullcalendar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\fullcalendar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\fullcalendar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\fullcalendar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\fullcalendar.print.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\gcal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang-all.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\ar-sa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\ar-tn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\de-at.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\is.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\sr-cyrl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\dist\lang\zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\license.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\fullcalendar\readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\dist\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\dist\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\dist\jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\ajax\jsonp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\ajax\load.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\ajax\parseJSON.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\ajax\parseXML.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\ajax\script.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\ajax\var\nonce.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\ajax\var\rquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\ajax\xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\attributes\attr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\attributes\classes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\attributes\prop.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\attributes\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\attributes\val.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\callbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\core.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\core\access.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\core\init.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\core\parseHTML.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\core\ready.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\core\var\rsingleTag.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\addGetHookIf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\curCSS.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\defaultDisplay.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\hiddenVisibleSelectors.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\swap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\var\cssExpand.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\var\getStyles.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\var\isHidden.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\var\rmargin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\css\var\rnumnonpx.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\data.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\deferred.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\deprecated.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\dimensions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\effects.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\effects\Tween.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\effects\animatedSelector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\event.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\event\ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\event\alias.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\event\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\exports\amd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\exports\global.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\intro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\manipulation.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\manipulation\_evalUrl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\manipulation\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\manipulation\var\rcheckableType.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\offset.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\outro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\queue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\queue\delay.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\selector-native.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\selector-sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\selector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\sizzle\dist\sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\sizzle\dist\sizzle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\sizzle\dist\sizzle.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\traversing.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\traversing\findFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\traversing\var\rneedsContext.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\arr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\class2type.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\concat.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\hasOwn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\indexOf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\pnum.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\push.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\rnotwhite.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\slice.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\strundefined.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\var\toString.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\jquery\src\wrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\Moment.js.nuspec" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\benchmarks\clone.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\af.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ar-sa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ar-tn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\az.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\be.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\bn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\bo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\bs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\cv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\cy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\de-at.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\eu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\fo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\fy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\hy-am.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\is.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ka.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\km.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\lb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\mk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ml.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\mr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ms-my.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\my.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ne.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\nn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\sq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\sr-cyrl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\ta.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\tl-ph.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\tzm-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\tzm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\uz.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\locale\zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\meteor\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\meteor\export.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\meteor\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\min\locales.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\min\locales.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\min\moment-with-locales.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\min\moment-with-locales.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\min\moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\moment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\_fullcalendar\moment\scripts\npm_prepublish.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\main_js.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\match_000\Desktop\Areacom\public\modules\core\views\style.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/core/views/header.client.view.html" afterPath="$PROJECT_DIR$/public/modules/core/views/header.client.view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/users/views/authentication/signin.client.view.html" afterPath="$PROJECT_DIR$/public/modules/users/views/authentication/signin.client.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/users/views/authentication/signup.client.view.html" afterPath="$PROJECT_DIR$/public/modules/users/views/authentication/signup.client.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Areacom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,24 +276,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
+      <file leaf-file-name="customers.client.controller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/modules/customers/controllers/customers.client.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.071429" vertical-offset="278" max-vertical-offset="799">
-              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.23054755" vertical-offset="158" max-vertical-offset="1377">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signin.client.view.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/modules/users/views/authentication/signin.client.view.html">
+      <file leaf-file-name="header.client.view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/modules/core/views/header.client.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23333333" vertical-offset="0" max-vertical-offset="1479">
-              <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+            <state vertical-scroll-proportion="-14.346154" vertical-offset="596" max-vertical-offset="1071">
+              <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customers.client.routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/modules/customers/config/customers.client.routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list-customers.client.view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/modules/customers/views/list-customers.client.view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="408">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.client.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/modules/core/controllers/header.client.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.client.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/modules/core/controllers/home.client.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1513">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menus.client.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/modules/core/services/menus.client.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1782" max-vertical-offset="2907">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.client.routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/modules/core/config/core.client.routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="425">
+              <caret line="12" column="85" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.server.routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes/users.server.routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="1054">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer.server.model.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/customer.server.model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="901">
+              <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -59,7 +385,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/public/modules/users/views/authentication/signup.client.view.html" />
         <option value="$PROJECT_DIR$/public/modules/users/views/authentication/signin.client.view.html" />
+        <option value="$PROJECT_DIR$/app/models/customer.server.model.js" />
+        <option value="$PROJECT_DIR$/public/modules/customers/css/customers.css" />
+        <option value="$PROJECT_DIR$/public/modules/customers/controllers/customers.client.controller.js" />
+        <option value="$PROJECT_DIR$/public/modules/core/views/main_js.js" />
+        <option value="$PROJECT_DIR$/public/modules/customers/views/create-customer.client.view.html" />
+        <option value="$PROJECT_DIR$/public/modules/core/views/header.client.view.html" />
+        <option value="$PROJECT_DIR$/public/modules/core/config/core.client.routes.js" />
+        <option value="$PROJECT_DIR$/public/modules/customers/views/list-customers.client.view.html" />
       </list>
     </option>
   </component>
@@ -154,8 +489,26 @@
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value="Areacom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Areacom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="customers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -177,7 +530,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value="customers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -203,15 +556,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value="customers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authentication" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -230,6 +579,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="customers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Areacom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Areacom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -241,11 +612,38 @@
     <property name="options.lastSelected" value="configurable.group.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Software_Eng/main-repository" />
+    <property name="last_opened_file_path" value="C:/Program Files/nodejs/meanjs" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -261,30 +659,50 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="701" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="701" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32869565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27382874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2609047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869565" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -315,29 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -345,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
@@ -357,19 +751,365 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.071429" vertical-offset="278" max-vertical-offset="799">
+        <state vertical-scroll-proportion="0.59638554" vertical-offset="278" max-vertical-offset="799">
           <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/articles/views/edit-article.client.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/users/users.client.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/users/views/password/forgot-password.client.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="459">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/users/controllers/settings.client.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/users/controllers/password.client.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/users/config/users.client.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users.server.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bower/lib/commands/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5418" max-vertical-offset="5746">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/article.server.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/users.password.server.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4335">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/core/views/home.client.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0508982" vertical-offset="0" max-vertical-offset="334">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/users/controllers/authentication.client.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2277777" vertical-offset="204" max-vertical-offset="850">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/customers/services/customers.client.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/users/views/settings/edit-profile.client.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/users/css/users.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/users/views/authentication/signup.client.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="697">
+          <caret line="0" column="67" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/users.authorization.server.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/users.authentication.server.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3621">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/users.profile.server.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/core.server.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/customers.server.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="1088">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/production.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1343">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/secure.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7305555" vertical-offset="983" max-vertical-offset="1343">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/core.server.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.server.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.261111" vertical-offset="339" max-vertical-offset="2567">
+          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/articles.server.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/customers/css/customers.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/modules/users/views/authentication/signin.client.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23333333" vertical-offset="0" max-vertical-offset="1479">
-          <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1479">
+          <caret line="8" column="22" selection-start-line="6" selection-start-column="16" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/customers.server.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/users/config/users.client.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="850">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/customers/customers.client.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/core/tests/home.client.controller.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/customers/views/create-customer.client.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="51" max-vertical-offset="1054">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/core/tests/header.client.controller.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/customers/config/customers.client.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/users.server.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="1054">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/customer.server.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="901">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/core/views/header.client.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.346154" vertical-offset="596" max-vertical-offset="1071">
+          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/core/controllers/header.client.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/core/controllers/home.client.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1153" max-vertical-offset="1513">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/core/services/menus.client.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2907">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/core/config/core.client.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="425">
+          <caret line="12" column="85" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/customers/config/customers.client.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/customers/views/list-customers.client.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="408">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/customers/controllers/customers.client.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23054755" vertical-offset="158" max-vertical-offset="1377">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding />
         </state>
       </provider>
