@@ -2,6 +2,7 @@
 
 (function() {
 	describe('HomeController', function() {
+
 		//Initialize global variables
 		var scope,
 			HomeController;

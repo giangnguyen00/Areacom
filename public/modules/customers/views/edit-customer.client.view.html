@@ -1,6 +1,7 @@
 <section data-ng-controller="CustomersController" data-ng-init="findOne()">
+    <header data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
     <div class="page-header">
-        <h1>Edit Customer</h1>
+        <h1>Edit User</h1>
     </div>
     <div class="col-md-12">
         <form class="form-horizontal" data-ng-submit="update()" novalidate>
