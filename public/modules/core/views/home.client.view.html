@@ -1,2 +1,20 @@
 <header data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
-<h1> Hello This application is under construction. Please come back to see us</h1>
+<div data-ng-controller = "HomeController">
+    <div class = "col-sm-4">
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item"><a data-ng-click = "changeState()">Calendar View</a></li>
+                <li class="list-group-item"><a data-ui-sref="main.calendar">List View</a></li>
+                <li class="list-group-item"><a data-ui-sref="calendar">Map View</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item"><a data-ui-sref="createContract">Create Contract</a></li>
+                <li class="list-group-item"><a data-ui-sref="edit">Edit</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class = "col-sm-8" data-ui-view = "name"></div>
+</div>
