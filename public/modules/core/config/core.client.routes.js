@@ -15,6 +15,15 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 		state('main', {
 			url: '/main',
 			templateUrl: 'modules/core/views/home.client.view.html'
+		}).
+		state('main.calendars',{
+			views: {	
+				url: "/test",
+        		'name':{ 
+        			templateUrl: 'modules/calendars/views/calendars.client.view.html'	
+        		}
+
+      		}
 		});
 	}
 ]);
