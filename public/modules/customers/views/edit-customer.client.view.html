@@ -1,12 +1,14 @@
-<section data-ng-controller="CustomersController" data-ng-init="findOne()">
-    <div class="page-header">
-        <h1 style="margin-left: 40%;color:#e60502">Edit User</h1>
+<section data-ng-controller="CustomersUpdateController as customerUpCtrl" >
+    <div class="modal-header">
+        <h3 class="modal-title">Edit User</h3>
     </div>
-    <div data-ng-show="error" class="text-danger">
-        <strong data-ng-bind="error"></strong>
-    </div>
-        <form class="form-horizontal" data-ng-submit="update()" novalidate>
+    <div class="modal-body">
+
+        <form>
             <fieldset>
+                <div data-ng-show = "error" class = "text-center text-danger">
+                    <strong data-ng bind = "error"> Error </strong>
+                </div>
                 <div class="col-md-12">
                     <label class="control-label" for="firstName">First Name</label>
                     <div class="controls">
@@ -23,7 +25,7 @@
                         <input type="text" data-ng-model="customer.email" id="email" class="form-control" placeholder="Name" required>
                     </div>
 
-                    <label class="control-label" for="userName">Username</label>
+                    <!--<label class="control-label" for="userName">Username</label>
                     <div class="controls">
                         <input type="text" data-ng-model="customer.userName" id="userName" class="form-control" placeholder="Name" required>
                     </div>
@@ -31,19 +33,20 @@
                     <label class="control-label" for="password">Password</label>
                     <div class="controls">
                         <input type="text" data-ng-model="customer.password" id="password" class="form-control" placeholder="Name" required>
-                    </div>
-                    </br>
-                    <!--<input type="submit" value="Update" class="btn btn-danger">-->
-                    <div class = "form-group col-md-12">
-                        <div class="controls">
-                            <button type="submit" class="btn btn-danger">
-                                Update
-                            </button>
-                        </div>
-                    </div>
+                    </div>-->
 
-                    </div>
+                        <label class="control-label" for="phone">Phone</label>
+                        <div class="controls">
+                            <input type="text" data-ng-model="customer.phone" id="phone" class="form-control" required >
+                        </div>
+                </div>
             </fieldset>
         </form>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-success" data-ng-click="customerUpCtrl.update(customer); ok()">Update & Close</button>
+        <button class="btn btn-warning" data-ng-click="cancel()">Cancel</button>
+    </div>
 
 </section>
