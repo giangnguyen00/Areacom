@@ -3,7 +3,7 @@
 module.exports = {
     app: {
         title: 'MEAN.JS',
-        description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
+        description: 'CONTRACT MANAGER APPLICATION',
         keywords: 'mongodb, express, angularjs, node.js, mongoose, passport'
     },
     port: process.env.PORT || 3000,
@@ -45,6 +45,7 @@ module.exports = {
             css: [
                 'public/lib/bootstrap/dist/css/bootstrap.css',
                 'public/lib/bootstrap/dist/css/bootstrap-theme.css',
+                'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'
             ],
             js: [
                 'public/lib/angular/angular.js',
@@ -52,7 +53,8 @@ module.exports = {
                 'public/lib/angular-animate/angular-animate.js',
                 'public/lib/angular-ui-router/release/angular-ui-router.js',
                 'public/lib/angular-ui-utils/ui-utils.js',
-                'public/lib/angular-bootstrap/ui-bootstrap-tpls.js'
+                'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+                'public/lib/moment/moment.js'
             ]
         },
         css: [
