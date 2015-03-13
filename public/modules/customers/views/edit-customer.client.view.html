@@ -1,10 +1,10 @@
 <section data-ng-controller="CustomersUpdateController as customerUpCtrl" >
     <div class="modal-header">
-        <h3 class="modal-title">Edit User</h3>
+        <h3 class="modal-title">Update: {{customer.firstName}} {{customer.lastName}} </h3>
     </div>
     <div class="modal-body">
 
-        <form>
+        <form name="updateCustomerForm">
             <fieldset>
                 <div data-ng-show = "error" class = "text-center text-danger">
                     <strong data-ng bind = "error"> Error </strong>
@@ -45,8 +45,8 @@
     </div>
 
     <div class="modal-footer">
-        <button class="btn btn-success" data-ng-click="customerUpCtrl.update(customer); ok()">Update & Close</button>
-        <button class="btn btn-warning" data-ng-click="cancel()">Cancel</button>
+        <button class="btn btn-success"    data-ng-click="customerUpCtrl.update(customer);ok()" ng-disabled="updateCustomerForm.$invalid">Update & Close</button>
+    <button class="btn btn-warning" data-ng-click="cancel()">Cancel</button>
     </div>
 
 </section>

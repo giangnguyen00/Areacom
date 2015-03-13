@@ -11,7 +11,6 @@ angular.module('calendars').controller('CalendarsController', ['$scope', 'Contra
             $scope.contracts = Contracts.query();
         };
 
-
         //Open Modal Window to 
         this.openModal = function (size, selectedContract) {
 

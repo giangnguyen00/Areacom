@@ -3,7 +3,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-calendar {
+.calendar {
     float: left;
     display: block;
     -webkit-box-sizing: border-box;
@@ -14,20 +14,20 @@ calendar {
     border: solid 1px #cccccc;
     margin-bottom: 10px;
 }
-calendar > div.header {
+ div.header {
     float: left;
     width: 100%;
     background: #666699;
     height: 60px;
     color: white;
 }
-calendar > div.header > * {
+ div.header > * {
     height: 40px;
     line-height: 60px !important;
     display: inline-block;
     vertical-align: middle;
 }
-calendar > div.header > i {
+ div.header > i {
     float: left;
     width: 40px;
     font-size: 1.125em;
@@ -39,14 +39,14 @@ calendar > div.header > i {
     padding: 0 10px;
     cursor: pointer;
 }
-calendar > div.header > i.fa-angle-left {
+ div.header > i.fa-angle-left {
     text-align: left;
 }
-calendar > div.header > i.fa-angle-right {
+. div.header > i.fa-angle-right {
     text-align: right;
     margin-left: -40px;
 }
-calendar > div.header > span {
+ div.header > span {
     float: left;
     width: 100%;
     font-weight: bold;
@@ -60,15 +60,15 @@ calendar > div.header > span {
     padding-right: 40px;
     color: inherit;
 }
-calendar > div.week {
+ div.week {
     float: left;
     width: 100%;
     border-top: solid 1px #cccccc;
 }
-calendar > div.week:first-child {
+ div.week:first-child {
     border-top: none;
 }
-calendar > div.week > span.day {
+ div.week > span.day {
     position: relative;
     float: left;
     width: 14.285714285714286%;
@@ -85,14 +85,14 @@ calendar > div.week > span.day {
     cursor: pointer;
     color: black;
 }
-calendar > div.week > span.day:first-child {
+ div.week > span.day:first-child {
     border-left: none;
 }
-calendar > div.week > span.day.today {
+ div.week > span.day.today {
     background-color: rgb(150, 153, 153);
 }
 
-calendar > div.week > span.eventExist {
+ div.week > span.eventExist {
 
     background-color: rgb(153, 86, 117);
 }
@@ -106,15 +106,15 @@ calendar > div.week > span.eventExist {
     background:linear-gradient(to bottom, #995675, #666699)
 }
 
-calendar > div.week > span.day.different-month {
+ div.week > span.day.different-month {
     background-color: #f8f8ff;
     color: lightgrey;
 }
-calendar > div.week > span.day.selected {
+ div.week > span.day.selected {
     background: #666699;
     color: white;
 }
-calendar > div.week.names > span {
+ div.week.names > span {
     color: #2875c7;
     font-weight: bold;
 }

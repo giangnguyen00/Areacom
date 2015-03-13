@@ -17,7 +17,14 @@ customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authe
                     $scope.customer = customer;
 
                     $scope.ok = function () {
-                        $modalInstance.close($scope.customer);
+                        /*if(updateCustomerForm.$valid)
+                        {
+                            $modalInstance.close($scope.customer);
+                        }*/
+                            $modalInstance.close($scope.customer);
+
+
+
                     };
 
                     $scope.cancel = function () {
@@ -53,6 +60,7 @@ customersApp.controller('CustomersUpdateController', ['$scope', 'Customers',
 
         // Update existing Customer
         this.update = function(updatedCustomer) {
+            console.log("Now calling the Update Method");
         	var customer = updatedCustomer;
         	customer.$update(function() {
         	}, function(errorResponse) {
