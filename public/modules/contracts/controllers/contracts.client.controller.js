@@ -10,6 +10,21 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 			// Create new Contract object
 			var contract = new Contracts ({
 				name: this.name
+				tcsiteID: this.tcsiteID
+				tositeID: this.tositeID
+				towner: this.towner;
+				pobox: this.pobox;
+				numdish: this.numdish;
+				StartDate: this.StartDate
+				EndDate: this.EndDate
+				address: this.address
+				city: this.city
+				state: this.state
+				zip: this.zip
+				lat: this.lat
+				longit: this.longit
+				ntp: this.ntp
+				towerbool: this.towerbool
 			});
 
 			// Redirect after save
@@ -18,6 +33,21 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 
 				// Clear form fields
 				$scope.name = '';
+				$scope.date = '';
+				$scope.tcsiteID = '';
+				$scope.tositeID= '';
+				$scope.towner= '';
+				$scope.pobox= '';
+				$scope.numdish= '';
+				$scope.address= '';
+				$scope.city= '';
+				$scope.state='';
+				$scope.zip= '';
+				$scope.EndDate= '';
+				$scope.longit= '';
+				$scope.lat = '';
+				$scope.ntp = '';
+				$scope.towerbool = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});
