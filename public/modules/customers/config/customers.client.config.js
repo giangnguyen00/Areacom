@@ -6,6 +6,6 @@ angular.module('customers').run(['Menus',
 		// Set top bar menu items
 		Menus.addMenuItem('topbar', 'Users', 'customers', 'dropdown', '/customers(/create)?');
 		Menus.addSubMenuItem('topbar', 'customers', 'List Users', 'customers');
-		Menus.addSubMenuItem('topbar', 'customers', 'New User', 'customers/create');
+		//Menus.addSubMenuItem('topbar', 'customers', 'New User', 'customers/create');
 	}
 ]);

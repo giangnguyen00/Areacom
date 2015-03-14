@@ -7,7 +7,7 @@
         <form name="updateCustomerForm">
             <fieldset>
                 <div data-ng-show = "error" class = "text-center text-danger">
-                    <strong data-ng bind = "error"> Error </strong>
+                    <strong data-ng-bind = "error"> Error </strong>
                 </div>
                 <div class="col-md-12">
                     <label class="control-label" for="firstName">First Name</label>
@@ -45,7 +45,7 @@
     </div>
 
     <div class="modal-footer">
-        <button class="btn btn-success"    data-ng-click="customerUpCtrl.update(customer);ok()" ng-disabled="updateCustomerForm.$invalid">Update & Close</button>
+        <button class="btn btn-success"    data-ng-click="customerUpCtrl.update(customer);ok()" data-ng-disabled="updateCustomerForm.$invalid">Update & Close</button>
     <button class="btn btn-warning" data-ng-click="cancel()">Cancel</button>
     </div>
 
