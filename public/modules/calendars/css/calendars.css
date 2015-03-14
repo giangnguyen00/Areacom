@@ -17,7 +17,7 @@
  div.header {
     float: left;
     width: 100%;
-    background: #666699;
+    background: #e60502;
     height: 60px;
     color: white;
 }
@@ -39,10 +39,10 @@
     padding: 0 10px;
     cursor: pointer;
 }
- div.header > i.fa-angle-left {
+div.header > i.fa-angle-left {
     text-align: left;
 }
-. div.header > i.fa-angle-right {
+div.header > i.fa-angle-right {
     text-align: right;
     margin-left: -40px;
 }
@@ -89,7 +89,7 @@
     border-left: none;
 }
  div.week > span.day.today {
-    background-color: rgb(150, 153, 153);
+    background-color: rgb(113, 153, 75);
 }
 
  div.week > span.eventExist {
@@ -111,11 +111,11 @@
     color: lightgrey;
 }
  div.week > span.day.selected {
-    background: #666699;
+    background: #03dae6;
     color: white;
 }
  div.week.names > span {
-    color: #2875c7;
+    color: #c20dff;
     font-weight: bold;
 }
 
