@@ -4,8 +4,9 @@
 angular.module('contracts').run(['Menus',
 	function(Menus) {
 		// Set top bar menu items
-		Menus.addMenuItem('topbar', 'Contracts', 'contracts', 'dropdown', '/contracts(/create)?');
-		Menus.addSubMenuItem('topbar', 'contracts', 'List Contracts', 'contracts');
+		//Menus.addMenuItem('topbar', 'Contracts', 'contracts', 'dropdown', '/contracts(/create)?');
+		Menus.addMenuItem('topbar', 'Contracts', 'contracts', '/contracts(/create)?');
+		//Menus.addSubMenuItem('topbar', 'contracts', 'List Contracts', 'contracts');
 		//Menus.addSubMenuItem('topbar', 'contracts', 'New Contract', 'contracts/create');
 	}
 ]);
