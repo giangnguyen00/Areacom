@@ -33,7 +33,7 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 
 				// Clear form fields
 				$scope.name = '';
-				$scope.date = '';
+				$scope.StartDate = '';
 				$scope.tcsiteID = '';
 				$scope.tositeID= '';
 				$scope.towner= '';
