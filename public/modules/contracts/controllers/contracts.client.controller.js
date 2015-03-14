@@ -9,21 +9,21 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 		$scope.create = function() {
 			// Create new Contract object
 			var contract = new Contracts ({
-				name: this.name
-				tcsiteID: this.tcsiteID
-				tositeID: this.tositeID
-				towner: this.towner;
-				pobox: this.pobox;
-				numdish: this.numdish;
-				StartDate: this.StartDate
-				EndDate: this.EndDate
-				address: this.address
-				city: this.city
-				state: this.state
-				zip: this.zip
-				lat: this.lat
-				longit: this.longit
-				ntp: this.ntp
+				name: this.name,
+				tcsiteID: this.tcsiteID,
+				tositeID: this.tositeID,
+				towner: this.towner,
+				pobox: this.pobox,
+				numdish: this.numdish,
+				StartDate: this.StartDate,
+				EndDate: this.EndDate,
+				address: this.address,
+				city: this.city,
+				state: this.state,
+				zip: this.zip,
+				lat: this.lat,
+				longit: this.longit,
+				ntp: this.ntp,
 				towerbool: this.towerbool
 			});
 
