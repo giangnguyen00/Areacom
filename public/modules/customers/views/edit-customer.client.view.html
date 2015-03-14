@@ -3,7 +3,6 @@
         <h3 class="modal-title">Update: {{customer.firstName}} {{customer.lastName}} </h3>
     </div>
     <div class="modal-body">
-
         <form name="updateCustomerForm">
             <fieldset>
                 <div data-ng-show = "error" class = "text-center text-danger">
@@ -25,7 +24,7 @@
                         <input type="text" data-ng-model="customer.email" id="email" class="form-control" placeholder="Name" required>
                     </div>
 
-                    <!--<label class="control-label" for="userName">Username</label>
+                    <label class="control-label" for="userName">Username</label>
                     <div class="controls">
                         <input type="text" data-ng-model="customer.userName" id="userName" class="form-control" placeholder="Name" required>
                     </div>
@@ -33,12 +32,8 @@
                     <label class="control-label" for="password">Password</label>
                     <div class="controls">
                         <input type="text" data-ng-model="customer.password" id="password" class="form-control" placeholder="Name" required>
-                    </div>-->
+                    </div>
 
-                        <label class="control-label" for="phone">Phone</label>
-                        <div class="controls">
-                            <input type="text" data-ng-model="customer.phone" id="phone" class="form-control" required >
-                        </div>
                 </div>
             </fieldset>
         </form>

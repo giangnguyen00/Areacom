@@ -22,31 +22,25 @@ var CustomerSchema = new Schema({
         required: 'Please fill Customer last name',
         trim: true
     },
-    /*userName: {
-        type: String,
-        default: '',
-        required: 'Please fill Customer user name',
-        trim: true
-    },
-
-    password: {
-        type: String,
-        default: '',
-        required: 'Please fill Customer password name',
-        trim: true
-    },*/
     email: {
         type: String,
         default: '',
         required: 'Please fill Customer email',
         trim: true
     },
-    phone: {
+    userName: {
         type: String,
         default: '',
-        required: 'Please fill Customer phone',
+        required: 'Please fill Customer user name',
         trim: true
     },
+    password: {
+        type: String,
+        default: '',
+        required: 'Please fill Customer password name',
+        trim: true
+    },
+
 	created: {
 		type: Date,
 		default: Date.now
