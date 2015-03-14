@@ -27,7 +27,7 @@ var ContractSchema = new Schema({
 	},
 	StartDate: {
 		type: Date,
-		default: ''
+		default: ''	
 	},
 	tcsiteID: {
 		type: String,
@@ -43,51 +43,55 @@ var ContractSchema = new Schema({
 	},
 	towner: {
 		type: String,
-		default: '',
+		default: ''
 	},
 	pobox: {
 		type: String,
-		default: '',
+		default: ''
 	},
 	numdish: {
 		type: String,
-		default: '',
+		default: ''
 	},
 	address: {
 		type: String,
-		default: '',
+		default: ''
 	},
 	city: {
 		type: String,
-		default: '',
+		default: ''
 	},
 	state: {
 		type: String,
-		default: '',
+		default: ''
 	},
 	zip: {
 		type: String,
-		default: '',
+		default: ''
 	},
 	EndDate: {
 		type: Date,
-		default: '',
+		default: ''
 	},
 	longit: {
 		type: String,
-		default: '',
+		default: ''
 	},
 	lat: {
 		type: String,
-		default: '',
+		default: ''
 	},
 	ntp: {
-		type: String,
-		default: '',
+		type: Boolean,
+		default: ''
 	},
 	towerbool: {
+		type: Boolean,
+		default : ''
+	},
+	notes: {
 		type: String,
-		default : '',
+		default : ''
 	}
 });
 
