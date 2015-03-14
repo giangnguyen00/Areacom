@@ -19,3 +19,15 @@ body.ng-cloak
 	display: block;
 }
 
+/* Gabe */
+.ng-scope[data-ui-view="name"] .col-sm-6
+{
+	width: 100%;
+	margin: 0;
+}
+
+.ng-scope[data-ng-controller="HomeController"] .list-group-item
+{
+	width: 20%;
+	float: left;
+}
