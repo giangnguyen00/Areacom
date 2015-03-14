@@ -24,7 +24,8 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 				lat: this.lat,
 				longit: this.longit,
 				ntp: this.ntp,
-				towerbool: this.towerbool
+				towerbool: this.towerbool,
+				notes: this.notes
 			});
 
 			// Redirect after save
