@@ -3,6 +3,35 @@
 	<div class="page-header">
 		<h1 data-ng-bind="contract.name"></h1>
 	</div>
+	<ul class="list-group">
+       	<label for="tcsiteID">Tower Cloud Site ID</label>
+        <li data-ng-bind="contract.tcsiteID" id="tcsiteID" class="list-group-item">{{contract.tcsiteID}}</li>
+        <label for="Address">Address</label>
+        <li data-ng-bind="contract.address" id="Address" class="list-group-item"></li>
+        <li data-ng-bind="contract.city" id="city" class="list-group-item"></li>
+        <li data-ng-bind="contract.state" id="state" class="list-group-item"></li>
+        <li data-ng-bind="contract.zip" id="zip" class="list-group-item"></li>
+        <label for="lat">Latitude</label>
+        <li data-ng-bind="contract.lat" id="lat" class="list-group-item"></li>
+        <label for="longit">Longitude</label>
+        <li data-ng-bind="contract.longit" id="longit" class="list-group-item" ></li>
+        <label for="tositeID">Tower Owner Site ID</label>
+        <li data-ng-bind="contract.tositeID" id="tositeID" class="list-group-item"></li>
+        <label for="towner">Tower Owner</label>
+        <li data-ng-bind="contract.towner" id="towner" class="list-group-item"></li>
+        <label for="pobox">P.O. #</label>
+        <li data-ng-bind="contract.pobox" id="pobox" class="list-group-item"></li>
+        <label for="numdish">Number of Dishes</label>
+        <li data-ng-bind="contract.numdish" id="numdish" class="list-group-item"></li>
+        <label for="StartDate">Start Date</label>
+        <li type="date" data-ng-bind="contract.StartDate" id="StartDate" class="list-group-item" ></li>
+        <label for="EndDate">End Date</label>
+        <li type="date" data-ng-bind="contract.EndDate" id="EndDate" class="list-group-item"></li>
+        <li data-ng-bind="contract.ntp"></li>                
+        <li data-ng-bind="contract.towerbool"></li>
+   		<label for="notes">Notes</label>
+    	<li class="list-group-item" data-ng-bind="contract.notes"id="notes" ></li>
+    </ul>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == contract.user._id))">
 		<a class="btn btn-primary" href="/#!/contracts/{{contract._id}}/edit">
 			<i class="glyphicon glyphicon-edit"></i>

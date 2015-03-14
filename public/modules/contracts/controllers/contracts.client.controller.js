@@ -4,7 +4,7 @@
 angular.module('contracts').controller('ContractsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Contracts',
 	function($scope, $stateParams, $location, Authentication, Contracts) {
 		$scope.authentication = Authentication;
-
+		this.contracts= Contracts.query();
 		// Create new Contract
 		$scope.create = function() {
 			// Create new Contract object
