@@ -20,7 +20,7 @@
     </div>
     </br>
     <div class="list-group">
-        <a data-ng-repeat="contract in contracts" data-ng-href="#!/contracts/{{contract._id}}" class="list-group-item">
+        <a data-ng-repeat="contract in contracts | filter:searchText" data-ng-href="#!/contracts/{{contract._id}}" class="list-group-item">
 			<small class="list-group-item-text">
 				Posted on
 				<span data-ng-bind="contract.created | date:'medium'"></span>

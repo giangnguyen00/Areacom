@@ -24,6 +24,14 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
         		}
 
       		}
+		}).
+		state('main.list', {
+			views: {
+				url: "/test",
+				'name':{
+					templateUrl: 'modules/contracts/views/list-contracts.client.view.html'
+				}
+			}
 		});
 	}
 ]);
