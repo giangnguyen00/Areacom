@@ -4,33 +4,33 @@
 		<h1 data-ng-bind="contract.name"></h1>
 	</div>
 	<ul class="list-group">
-       	<label for="tcsiteID">Tower Cloud Site ID</label>
+       	<label for="tcsiteID" data-ng-show="contract.tcsiteID">Tower Cloud Site ID</label>
         <li data-ng-bind="contract.tcsiteID" id="tcsiteID" class="list-group-item">{{contract.tcsiteID}}</li>
-        <label for="Address">Address</label>
-        <li data-ng-bind="contract.address" id="Address" class="list-group-item"></li>
-        <li data-ng-bind="contract.city" id="city" class="list-group-item"></li>
-        <li data-ng-bind="contract.state" id="state" class="list-group-item"></li>
-        <li data-ng-bind="contract.zip" id="zip" class="list-group-item"></li>
-        <label for="lat">Latitude</label>
-        <li data-ng-bind="contract.lat" id="lat" class="list-group-item"></li>
-        <label for="longit">Longitude</label>
-        <li data-ng-bind="contract.longit" id="longit" class="list-group-item" ></li>
-        <label for="tositeID">Tower Owner Site ID</label>
-        <li data-ng-bind="contract.tositeID" id="tositeID" class="list-group-item"></li>
-        <label for="towner">Tower Owner</label>
-        <li data-ng-bind="contract.towner" id="towner" class="list-group-item"></li>
-        <label for="pobox">P.O. #</label>
-        <li data-ng-bind="contract.pobox" id="pobox" class="list-group-item"></li>
-        <label for="numdish">Number of Dishes</label>
-        <li data-ng-bind="contract.numdish" id="numdish" class="list-group-item"></li>
-        <label for="StartDate">Start Date</label>
-        <li type="date" data-ng-bind="contract.StartDate" id="StartDate" class="list-group-item" ></li>
-        <label for="EndDate">End Date</label>
-        <li type="date" data-ng-bind="contract.EndDate" id="EndDate" class="list-group-item"></li>
-        <li data-ng-bind="contract.ntp"></li>                
-        <li data-ng-bind="contract.towerbool"></li>
-   		<label for="notes">Notes</label>
-    	<li class="list-group-item" data-ng-bind="contract.notes"id="notes" ></li>
+        <label data-ng-show="contract.address || contract.city || contract.state || contract.zip" for="Address">Address</label>
+        <li data-ng-show="contract.address" data-ng-bind="contract.address" id="Address" class="list-group-item"></li>
+        <li data-ng-show="contract.city" data-ng-bind="contract.city" id="city" class="list-group-item"></li>
+        <li data-ng-show="contract.state" data-ng-bind="contract.state" id="state" class="list-group-item"></li>
+        <li data-ng-show="contract.zip" data-ng-bind="contract.zip" id="zip" class="list-group-item"></li>
+        <label data-ng-show="contract.lat" for="lat">Latitude</label>
+        <li data-ng-show="contract.lat" data-ng-bind="contract.lat" id="lat" class="list-group-item"></li>
+        <label for="longit" data-ng-show="contract.longit">Longitude</label>
+        <li data-ng-show="contract.longit" data-ng-bind="contract.longit" id="longit" class="list-group-item" ></li>
+        <label for="tositeID" data-ng-show="contract.tositeID">Tower Owner Site ID</label>
+        <li data-ng-show="contract.tositeID" data-ng-bind="contract.tositeID" id="tositeID" class="list-group-item"></li>
+        <label for="towner" data-ng-show="contract.towner">Tower Owner</label>
+        <li data-ng-show="contract.towner" data-ng-bind="contract.towner" id="towner" class="list-group-item"></li>
+        <label for="pobox" data-ng-show="contract.pobox">P.O. #</label>
+        <li data-ng-show="contract.pobox" data-ng-bind="contract.pobox" id="pobox" class="list-group-item"></li>
+        <label for="numdish" data-ng-show="contract.NumDish">Number of Dishes</label>
+        <li data-ng-show="contract.numdish" data-ng-bind="contract.numdish" id="numdish" class="list-group-item"></li>
+        <label for="StartDate" data-ng-show="contract.StartDate">Start Date</label>
+        <li type="date" data-ng-show="contract.StartDate" data-ng-bind="contract.StartDate" id="StartDate" class="list-group-item" ></li>
+        <label for="EndDate" data-ng-show="contract.EndDate">End Date</label>
+        <li type="date" data-ng-show="contract.EndDate" data-ng-bind="contract.EndDate" id="EndDate" class="list-group-item"></li>
+        <li data-ng-show="contract.ntp">NTP</li>                
+        <li data-ng-show="contract.towerbool">Tower</li>
+   		<label for="notes" data-ng-show="contract.notes">Notes</label>
+    	<li class="list-group-item" data-ng-show="contract.notes" data-ng-bind="contract.notes"id="notes" ></li>
     </ul>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == contract.user._id))">
 		<a class="btn btn-primary" href="/#!/contracts/{{contract._id}}/edit">

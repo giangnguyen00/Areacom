@@ -4,6 +4,9 @@
         <h1>New Contract</h1>
     </div>
     <div class="col-md-12">
+        <div data-ng-show="error" class="text-danger">
+            <strong data-ng-bind="error"></strong>
+        </div>
         <form class="form-horizontal" data-ng-submit="create()" novalidate>
             <fieldset>
                 <div class="controls">
@@ -75,13 +78,10 @@
                         </label>
                     </div>
                     <label class="control-label" for="notes">Notes</label>
-                    <textarea class="form-control"  rows="3" data-ng-model="notes"id="notes" placeholder="Add any notes here..."></textarea>
+                    <textarea class="form-control"  rows="3" data-ng-model="notes" id="notes" placeholder="Add any notes here..."></textarea>
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-default">
-                </div>
-                <div data-ng-show="error" class="text-danger">
-                    <strong data-ng-bind="error"></strong>
                 </div>
             </fieldset>
         </form>
