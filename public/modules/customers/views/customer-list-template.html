@@ -10,6 +10,12 @@
                     <h5>{{customer.email}}</h5>
                     <small class="list-group-item-text text-muted">
                         <span data-ng-bind="customer.created | date:'medium'"></span>
+
+                        <span class="pull-right">
+                            <button class="btn btn-default btn-xs" data-ng-click="CustomerCtrl.remove(customer)">
+                                <i class="glyphicon glyphicon-trash"></i>
+                            </button>
+                        </span>
                     </small>
                 </div>
             </div>
@@ -17,5 +23,5 @@
     </div>
 </div>
 <div class="alert alert-warning text-center" data-ng-hide="!customers.$resolved || customers.length">
-    No Users yet, why don't you <a href="/#!/customers/create">create one</a>?
+    No Users yet, why don't you <a data-ng-click="CustomerCtrl.modalCreate('lg')">create one</a>?
 </div>
