@@ -9,10 +9,10 @@ passwordindc = 'pieintheskydogs'
 fpath = './config/env/development.js'
 
 def main():
-  if os.name=='nt':
-    os.system('python logout_task.py')
-  else:
-    os.system('python3 logout_task.py')
+  #if os.name=='nt':
+  #  os.system('python logout_task.py')
+  #else:
+  #  os.system('python3 logout_task.py')
   fd = open(fpath)
   newLines = []
   username, password = None, None
