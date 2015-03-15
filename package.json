@@ -15,7 +15,9 @@
   "scripts": {
     "start": "grunt",
     "test": "grunt test",
-    "postinstall": "bower install --config.interactive=false"
+    "postinstall": "bower install --config.interactive=false",
+    "logout": "python3 logout_task.py",
+    "logoutwin": "python logout_task.py"
   },
   "dependencies": {
     "angular-momentjs": "^0.1.9",
@@ -69,7 +71,12 @@
     "karma-jasmine": "~0.2.1",
     "karma-phantomjs-launcher": "~0.1.2",
     "load-grunt-tasks": "~1.0.0",
+    "pre-commit": "^1.0.6",
     "should": "~4.1.0",
     "supertest": "~0.14.0"
+  },
+  "pre-commit": {
+    run: ["logout", "logoutwin"],
+    silent: true
   }
 }
