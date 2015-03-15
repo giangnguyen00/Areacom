@@ -2,7 +2,7 @@
 
 module.exports = {
 	db: {
-		uri: 'mongodb://acomadmin:coma3031@ds050087.mongolab.com:50087/areacom',
+		uri: 'mongodb://1234567:pieintheskydogs@ds050087.mongolab.com:50087/areacom',
 		options: {
 			user: '',
 			pass: ''

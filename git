@@ -1,0 +1,14 @@
+#Windows wrapper for the logout task because symlinks require admin
+
+import os,sys
+
+def main():
+  if os.name=='nt':
+    os.system('python logout_task.py')
+  else:
+    os.system('python3 logout_task.py')
+  os.system(' '.join(sys.argv))
+
+if __name__=='__main__':
+  print('Wrapped!')
+  main()
