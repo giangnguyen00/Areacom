@@ -6,6 +6,7 @@ defline = "\t\turi: 'mongodb://1234567:pieintheskydogs@ds050087.mongolab.com:500
 fpath = './config/env/development.js'
 
 def main():
+  print("Stripping login secrets...")
   fd = open(fpath)
   newLines = fd.readlines()
   newLines[4] = defline

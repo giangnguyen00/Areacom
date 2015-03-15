@@ -7,13 +7,13 @@ passwordindc = 'pieintheskydogs'
 fpath = './config/env/development.js'
 
 def main():
-  username = input('Please enter the database username: ')
-  password = input('Please enter the database password: ')
   fd = open(fpath)
   newLines = []
+  username, password = None, None
   for line in fd.readlines():
     newLine = line
     if usernameindc in line and passwordindc in line:
+      username, password = getCredentials()
       newLine = line.replace(usernameindc, username)
       newLine = newLine.replace(passwordindc, password)
     newLines.append(newLine)
@@ -22,6 +22,15 @@ def main():
   for line in newLines:
     fd.write(line)
   fd.close()
+  if not username or not password:
+    print("Using stored credentials... use logout_task.py manually to reauth.")
+
+def getCredentials():
+  username = input("Enter the DB connection username: ")
+  print("Got: " + username)
+  password = input("Enter the DB connection password: ")
+  print("Got: " + password)
+  return username,password
 
 if __name__=='__main__':
   main()
