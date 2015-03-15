@@ -76,7 +76,7 @@
     "supertest": "~0.14.0"
   },
   "pre-commit": {
-    run: ["logout", "logoutwin"],
-    silent: true
+    "run": ["logout", "logoutwin"],
+    "silent": true
   }
 }
