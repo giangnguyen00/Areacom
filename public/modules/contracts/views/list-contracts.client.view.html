@@ -21,13 +21,13 @@
     </br>
     <div class="list-group">
         <a data-ng-repeat="contract in contracts | filter:searchText" data-ng-href="#!/contracts/{{contract._id}}" class="list-group-item">
-			<small class="list-group-item-text">
+            <h4 class="list-group-item-heading" data-ng-bind="contract.name"></h4>
+            <small class="list-group-item-text">
 				Posted on
 				<span data-ng-bind="contract.created | date:'medium'"></span>
 				by
 				<span data-ng-bind="contract.user.displayName"></span>
 			</small>
-			<h4 class="list-group-item-heading" data-ng-bind="contract.name"></h4>
         </a>
     </div>
 
