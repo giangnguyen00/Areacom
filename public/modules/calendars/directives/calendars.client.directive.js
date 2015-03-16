@@ -2,7 +2,6 @@
 
 angular.module('calendars').directive('calendars', [
 	function() {
-
 		function _removeTime(date) {
 			return date.day(0).hour(0).minute(0).second(0).millisecond(0);
 		}

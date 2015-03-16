@@ -2,11 +2,25 @@
 
 var customersApp = angular.module('customers');
 // Customers controller
-customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authentication', 'Customers','$modal', '$log' ,
-	function($scope, $stateParams, Authentication, Customers, $modal, $log) {
+customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authentication', 'Customers','$modal', '$log' , '$http',
+	function($scope, $stateParams, Authentication, Customers, $modal, $log, $http) {
         this.authentication = Authentication;
         // Find a list of Customers
         this.customers = Customers.query();
+
+        $scope.userList = {};
+        $scope.getUsers = function(){
+            $http.get('/users/list').success(function(response){
+               $scope.userList = response;
+
+                console.log(response);
+
+                // And redirect to the index page
+                //$location.path('/');
+            }).error(function(response) {
+                $scope.error = response.message;
+            });
+        };
 
         //open a modal window to create a single user record
         this.modalCreate = function (size) {
@@ -40,8 +54,8 @@ customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authe
         };
 
         //open a modal window to update a single user record
-        this.modalUpdate = function (size, selectedCustomer) {
-
+        $scope.modalUpdate = function (size, selectedCustomer) {
+            console.log("open");
             var modalInstance = $modal.open({
                 templateUrl: 'modules/customers/views/edit-customer.client.view.html',
                 controller: function ($scope, $modalInstance, customer) {
@@ -83,7 +97,7 @@ customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authe
         		customer.$remove();
 
         		for (var i in this.customers) {
-        			if (this.customers [i] === customer) {
+        			if (this.customers [i] == customer) {
         				this.customers.splice(i, 1);
         			}
         		}
@@ -111,7 +125,9 @@ customersApp.controller('CustomersCreateController', ['$scope', 'Customers', 'No
                email: this.email,
                phone:this.phone
 
+
         });
+
 
         	// Redirect after save
         	customer.$save(function(response) {

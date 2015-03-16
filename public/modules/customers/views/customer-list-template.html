@@ -1,6 +1,6 @@
-<div class="list-group">
-    <div class ="col-xs-6 col-sm-3 extra-space" id = "list" data-ng-repeat="customer in CustomerCtrl.customers | filter:searchText">
-        <a data-ng-click="CustomerCtrl.modalUpdate('lg',customer)" class="list-group-item">
+<div class="list-group" data-ng-controller="CustomersController" data-ng-init="getUsers()">
+    <div data-ng-click="modalUpdate('lg',customer)" class ="col-xs-6 col-sm-3 extra-space" id = "list" data-ng-repeat="customer in userList | filter:searchText">
+        <a  class="list-group-item">
             <h4 class="cust-list text-center">
                 <i class="glyphicon glyphicon-user"></i>
             </h4>
@@ -12,7 +12,7 @@
                         <span data-ng-bind="customer.created | date:'medium'"></span>
 
                         <span class="pull-right">
-                            <button class="btn btn-default btn-xs" id = "delete" data-ng-click="CustomerCtrl.remove(customer)">
+                            <button class="btn btn-default btn-xs" id = "delete" data-ng-click="remove(customer)">
                                 <i class="glyphicon glyphicon-trash"></i>
                             </button>
                         </span>
@@ -23,6 +23,6 @@
     </div>
 </div>
 <div class="alert alert-warning text-center" data-ng-hide="!customers.$resolved || customers.length">
-    No Users yet, why don't you <a data-ng-click="CustomerCtrl.modalCreate('lg')">create one</a>?
+    No Users yet, why don't you <a data-ng-click="modalCreate('lg')">create one</a>?
 </div>
 

@@ -14,6 +14,9 @@ module.exports = function(app) {
 		.put(users.requiresLogin, customers.hasAuthorization, customers.update)
 		.delete(users.requiresLogin, customers.hasAuthorization, customers.delete);
 
+    //app.route('/customers/list')
+    //    .get(customers.read);
+
 	// Finish by binding the Customer middleware
 	app.param('customerId', customers.customerByID);
 };

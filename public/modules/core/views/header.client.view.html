@@ -10,25 +10,19 @@
     </div>
     <nav class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation">
         <ul class="nav navbar-nav" data-ng-if="menu.shouldRender(authentication.user);">
-            <li data-ng-repeat="item in menu.items | orderBy: 'position'" data-ng-if="item.shouldRender(authentication.user);" data-ng-switch="item.menuItemType" data-ui-route="{{item.uiRoute}}" class="{{item.menuItemClass}}" data-ng-class="{active: ($uiRoute)}">
-                <a data-ng-switch-when="" data-ng-hide="authentication.user.roles[0] =='user' && item.title =='Users'">
-                    <span data-ng-bind="item.title"></span>
-                    <b class="caret"></b>
-                </a>
-                <!--<ul data-ng-switch-when="dropdown" class="dropdown-menu">-->
-                    <!--<li data-ng-repeat="subitem in item.items | orderBy: 'position'" data-ng-if="subitem.shouldRender(authentication.user);" data-ui-route="{{subitem.uiRoute}}" data-ng-class="{active: $uiRoute}">-->
-                        <!--<a href="/#!/{{subitem.link}}" data-ng-bind="subitem.title"></a>-->
-                    <!--</li>-->
-                <!--</ul>-->
-                <a data-ng-switch-default href="/#!/{{item.link}}" data-ng-bind="item.title"></a>
+            <li>
+            <a href="/#!/contracts"> Contracts </a>
+            </li>
+            <li data-ng-hide="authentication.user.roles[0]=='user'">
+                <a href="/#!/customers"> Users </a>
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right" data-ng-hide="authentication.user">
             <!--<li ui-route="/signup" ng-class="{active: $uiRoute}">-->
-            <!--<a href="/#!/signup">Sign Up</a>-->
+                <!--<a href="/#!/signup">Sign Up</a>-->
             <!--</li>-->
             <li class="divider-vertical"></li>
-            <li data-ui-route="/signin" data-ng-class="{active: $uiRoute}">
+            <li ui-route="/signin" ng-class="{active: $uiRoute}">
                 <a href="/#!/signin">Sign In</a>
             </li>
         </ul>
@@ -42,7 +36,7 @@
                         <a href="/#!/settings/profile">Edit Profile</a>
                     </li>
                     <!--<li>-->
-                    <!--<a href="/#!/settings/accounts">Manage Social Accounts</a>-->
+                        <!--<a href="/#!/settings/accounts">Manage Social Accounts</a>-->
                     <!--</li>-->
                     <li data-ng-show="authentication.user.provider === 'local'">
                         <a href="/#!/settings/password">Change Password</a>
@@ -56,3 +50,4 @@
         </ul>
     </nav>
 </div>
+
