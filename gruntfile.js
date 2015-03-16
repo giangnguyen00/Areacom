@@ -139,11 +139,19 @@ module.exports = function(grunt) {
 			unit: {
 				configFile: 'karma.conf.js'
 			}
+		},
+		shell: {
+			login_db: {
+				command: function() {
+					return './login_task.py';
+				}
+			}
 		}
 	});
 
 	// Load NPM tasks
 	require('load-grunt-tasks')(grunt);
+        grunt.loadNpmTasks('grunt-shell');
 
 	// Making grunt default to force in order not to break the project.
 	grunt.option('force', true);
@@ -158,7 +166,7 @@ module.exports = function(grunt) {
 	});
 
 	// Default task(s).
-	grunt.registerTask('default', ['lint', 'concurrent:default']);
+	grunt.registerTask('default', ['lint', 'shell:login_db', 'concurrent:default']);
 
 	// Debug task.
 	grunt.registerTask('debug', ['lint', 'concurrent:debug']);
