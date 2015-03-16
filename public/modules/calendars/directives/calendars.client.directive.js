@@ -79,10 +79,10 @@ angular.module('calendars').directive('calendars', [
                     var result = false;
                     angular.forEach(scope.contracts ,function(value, index){
                     	var date1 = $filter('date')(day.date, "yyyy-MM-dd");
-                    	var date2 = $filter('date')(value.date, "yyyy-MM-dd");
+                    	var date2 = $filter('date')(value.StartDate, "yyyy-MM-dd");
                     	console.log(date1);
                     	console.log(date2);
-                        if(date1 === date2) {
+                        if(date1 == date2) {
                             result = true;
                         }
                     });

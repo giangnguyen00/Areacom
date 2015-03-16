@@ -29,9 +29,7 @@ body.ng-cloak
 	float: right;
     margin: 0;
 }
-.ng-scope[data-ng-controller="HomeController"] .list-group-item
-{
-	width: 20%;
-	float: left;
+#option{
+	color: #686868 !important;
+	
 }
-
