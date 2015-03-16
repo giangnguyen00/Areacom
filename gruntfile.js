@@ -143,7 +143,7 @@ module.exports = function(grunt) {
 		shell: {
 			login_db: {
 				command: function() {
-					return 'python3 login_task.py';
+					return './login_task.py';
 				}
 			}
 		}
