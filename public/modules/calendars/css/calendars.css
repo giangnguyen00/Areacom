@@ -3,7 +3,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.calendar {
+.calendars {
     float: left;
     display: block;
     -webkit-box-sizing: border-box;
@@ -17,7 +17,7 @@
  div.header {
     float: left;
     width: 100%;
-    background: #e60502;
+    background: #880020;
     height: 60px;
     color: white;
 }
@@ -89,7 +89,7 @@ div.header > i.fa-angle-right {
     border-left: none;
 }
  div.week > span.day.today {
-    background-color: rgb(248, 245, 92);
+    background-color: #880020;
 }
 
  div.week > span.eventExist {
@@ -115,7 +115,8 @@ div.header > i.fa-angle-right {
     color: white;
 }
  div.week.names > span {
-    color: #c20dff;
+    color: #880020;
     font-weight: bold;
 }
+
 

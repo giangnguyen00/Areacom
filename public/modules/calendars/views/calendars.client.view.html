@@ -1,14 +1,15 @@
-<section data-ng-controller="CalendarsController" data-ng-init="find()" data-ng-init="getToday">
+<section data-ng-controller="CalendarsController as CalCtrl" data-ng-init="find()" data-ng-init="getToday">
     <div class = "row">
-        <div class = "col-sm-6 col-sm-offset-1">
+        <div class = "col-sm-8">
             <calendars selected="day" contracts="contracts"></calendars>
         </div>
-        <div class = "col-sm-5">
+        <div class = "col-sm-4">
             <div class="list-group">
                 <!--#!/contracts/{{contract._id}}-->
-                <a data-ng-repeat="contract in contracts" data-ng-click="CalCtrl.openModal(lg, contract)" data-ng-if="day.format('MM') == contract.date.month && day.format('D') == contract.date.day && day.format('YYYY') == contract.date.year" class="list-group-item">
+                <a data-ng-repeat="contract in contracts" data-ng-click="CalCtrl.openModal(lg, contract)" data-ng-if="day.format('MM/DD/YYYY').getTime() === contract.StartDate.format('MM/DD/YYYY').getTime()" class="list-group-item">
+                    
+                    <h1 class="list-group-item-heading text-center" data-ng-bind="contract.name"> ></h1>
 
-                    <h1 class="list-group-item-heading text-center" data-ng-bind="contract.name"></h1>
                 </a>
             </div>
         </div>
