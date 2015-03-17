@@ -208,7 +208,7 @@ exports.removeOAuthProvider = function(req, res, next) {
 };
 
 exports.list = function(req, res) {
-    User.find({}).sort('-created').exec(function(err, results){
+    User.find({roles:'user'}).sort('-created').exec(function(err, results){
         if(err)
         {
             return res.status(400).send({

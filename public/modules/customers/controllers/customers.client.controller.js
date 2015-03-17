@@ -2,7 +2,7 @@
 
 var customersApp = angular.module('customers');
 // Customers controller
-customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authentication', 'Customers','$modal', '$log' , '$http',
+customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authentication', 'Customers','$modal', '$log','$http',
 	function($scope, $stateParams, Authentication, Customers, $modal, $log, $http) {
         this.authentication = Authentication;
         // Find a list of Customers
