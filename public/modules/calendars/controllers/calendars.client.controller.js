@@ -15,7 +15,7 @@ angular.module('calendars').controller('CalendarsController', ['$scope', 'Contra
         this.openModal = function (size, selectedContract) {
 
             var modalInstance = $modal.open({
-                templateUrl: '/modules/contracts/views/create-contract.client.view.html',
+                templateUrl: '/modules/contracts/views/view-contract-from-calendar.client.view.html',
                 controller: function ($scope, $modalInstance, $stateParams, contract) {
                     $scope.contract = contract;
 
