@@ -89,7 +89,7 @@ div.header > i.fa-angle-right {
     border-left: none;
 }
  div.week > span.day.today {
-    background-color: #880020;
+    background-color: #ecffa3;
 }
 
  div.week > span.eventExist {

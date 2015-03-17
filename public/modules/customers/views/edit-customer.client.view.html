@@ -26,13 +26,13 @@
 
                     <label class="control-label" for="userName">Username</label>
                     <div class="controls">
-                        <input type="text" data-ng-model="customer.userName" id="userName" class="form-control" placeholder="Name" required>
+                        <input type="text" data-ng-model="customer.username" id="username" class="form-control" placeholder="Name" required>
                     </div>
 
-                    <label class="control-label" for="password">Password</label>
-                    <div class="controls">
-                        <input type="text" data-ng-model="customer.password" id="password" class="form-control" placeholder="Enter a new Password" required>
-                    </div>
+                    <!--<label class="control-label" for="password">Password</label>-->
+                    <!--<div class="controls">-->
+                        <!--<input type="text" data-ng-model="customer.password" id="password" class="form-control" placeholder="Enter a new Password" required>-->
+                    <!--</div>-->
 
                 </div>
             </fieldset>
@@ -40,7 +40,7 @@
     </div>
 
     <div class="modal-footer">
-        <button class="btn btn-success" id ="update" data-ng-click="customerUpCtrl.update(customer);ok()" data-ng-disabled="updateCustomerForm.$invalid">Update & Close</button>
+        <button class="btn btn-success" id ="edit" data-ng-click="customerUpCtrl.update(customer);ok()" data-ng-disabled="updateCustomerForm.$invalid">Update & Close</button>
     <button class="btn btn-warning" data-ng-click="cancel()">Cancel</button>
     </div>
 
