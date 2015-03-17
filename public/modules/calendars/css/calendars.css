@@ -89,12 +89,12 @@ div.header > i.fa-angle-right {
     border-left: none;
 }
  div.week > span.day.today {
-    background-color: #ecffa3;
+    background-color: #880020;
 }
 
  div.week > span.eventExist {
 
-    background-color: rgb(153, 86, 117);
+    background-color: #3B0B2E;
 }
 .grad{
     position: absolute;

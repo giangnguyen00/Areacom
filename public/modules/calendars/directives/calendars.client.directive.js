@@ -81,7 +81,7 @@ angular.module('calendars').directive('calendars', [
                     	var date2 = $filter('date')(value.startDate, "YYYY-MM-DD");
                     	alert(date1);
                     	alert(date2);
-                        if(date1 == date2) {
+                        if(day.date === value.StartDate) {
                             result = true;
                         }
                     });
