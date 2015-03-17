@@ -69,18 +69,44 @@ describe('AreaCommunications Project', function() {
         browser.sleep(3000);
     });
 
-    ////// not working
-    ////it('should be able to update contracts', function() {
-    ////    element(by.link('main.calendars')).click();
-    ////    browser.sleep(4000);
-    ////});
-    ////
-    ////// not working
-    ////it('should be able to delete contracts', function() {
-    ////    element(by.link('main.calendars')).click();
-    ////    browser.sleep(4000);
-    ////});
-    ////
+    //// not working
+    //it('should be able to update contracts', function() {
+    //
+    //    element(by.id('list')).click();
+    //    element(by.model('name')).clear();
+    //    element(by.model('name')).sendKeys('Sangeetha');
+    //
+    //    element(by.model('tcsiteID')).clear();
+    //    element(by.model('tcsiteID')).sendKeys('7');
+    //
+    //    element(by.model('longit')).clear();
+    //    element(by.model('longit')).sendKeys('30');
+    //
+    //    element(by.model('tositeID')).clear();
+    //    element(by.model('tositeID')).sendKeys('77');
+    //    element(by.model('StartDate')).sendKeys('11/07/2009');
+    //
+    //    element(by.id('update')).click();
+    //    browser.sleep(2000);
+    //
+    //});
+    //
+    //// working
+    //it('should be able to delete contracts', function() {
+    //    element(by.id('delete')).click();
+    //    browser.sleep(2000);
+    //    element(by.id('delete')).click();
+    //    browser.sleep(2000);
+    //});
+
+    //// working
+    //it('should be able to search contracts', function() {
+    //    element(by.model('searchText')).sendKeys('update');
+    //    element(by.model('searchText')).clear();
+    //    element(by.model('searchText')).sendKeys('Contract');
+    //    browser.sleep(2000);
+    //});
+
 
     // working
     it('should be able to create new users', function() {
