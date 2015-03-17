@@ -2,7 +2,7 @@
 
 var customersApp = angular.module('customers');
 // Customers controller
-customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authentication', 'Customers','$modal', '$log' , '$http',
+customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authentication', 'Customers','$modal', '$log','$http',
 	function($scope, $stateParams, Authentication, Customers, $modal, $log, $http) {
         this.authentication = Authentication;
         // Find a list of Customers
@@ -151,14 +151,24 @@ customersApp.controller('CustomersCreateController', ['$scope', 'Customers', 'No
 customersApp.controller('CustomersUpdateController', ['$scope', 'Customers',
     function($scope, Customers) {
 
+        //// Update existing Customer
+        //this.update = function(updatedCustomer) {
+        //    console.log("Now calling the Update Method");
+        //	var customer = updatedCustomer;
+        //	customer.$update(function() {
+        //	},function(errorResponse) {
+        //		$scope.error = errorResponse.data.message;
+        //	});
+        //};
+
         // Update existing Customer
         this.update = function(updatedCustomer) {
             console.log("Now calling the Update Method");
-        	var customer = updatedCustomer;
-        	customer.$update(function() {
-        	}, function(errorResponse) {
-        		$scope.error = errorResponse.data.message;
-        	});
+            var customer = updatedCustomer;
+            customer.$update(function() {
+            },function(errorResponse) {
+                $scope.error = errorResponse.data.message;
+            });
         };
     }
 ]);
