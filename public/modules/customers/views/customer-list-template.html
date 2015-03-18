@@ -1,6 +1,39 @@
+<!--<div class="list-group" data-ng-controller="CustomersController" data-ng-init="getUsers()">-->
+    <!--<div data-ng-click="modalUpdate('lg',customer)" class ="col-xs-6 col-sm-3 extra-space" data-ng-repeat="customer in userList | filter:searchText">-->
+        <!--<a class="list-group-item">-->
+        <!--<h4 class="cust-list text-center">-->
+                <!--<i class="glyphicon glyphicon-user"></i>-->
+            <!--</h4>-->
+            <!--<div class = "row">-->
+                <!--<div class = "col-xs-14 col-xs-offset-1">-->
+                    <!--<h4>{{customer.firstName}} {{customer.lastName}}</h4>-->
+                    <!--<h5>{{customer.email}}</h5>-->
+                    <!--<small class="list-group-item-text text-muted">-->
+                        <!--<span data-ng-bind="customer.created | date:'medium'"></span>-->
+
+                        <!--<span class="pull-right">-->
+                            <!--<button class="btn btn-default btn-xs" id = "delete" data-ng-click="customer.remove(customer)">-->
+                                <!--<i class="glyphicon glyphicon-trash"></i>-->
+                            <!--</button>-->
+                        <!--</span>-->
+                    <!--</small>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</a>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="alert alert-warning text-center" data-ng-hide="!customer.$resolved || customer.length">-->
+    <!--No Users yet, why don't you <a data-ng-click="modalCreate('lg')">create one</a>?-->
+<!--</div>-->
+
 <div class="list-group" data-ng-controller="CustomersController" data-ng-init="getUsers()">
-    <div data-ng-click="modalUpdate('lg',customer)" class ="col-xs-6 col-sm-3 extra-space" data-ng-repeat="customer in userList | filter:searchText" id ="list">
-        <a  class="list-group-item">
+    <div class ="col-xs-6 col-sm-3 extra-space" data-ng-repeat="customer in userList | filter:searchText">
+        <a class="list-group-item">
+                     <span class="pull-right">
+                            <button class="btn btn-default btn-xs" id = "edit" data-ng-click="modalUpdate('lg',customer)">
+                                <i class="glyphicon glyphicon-edit"></i>
+                            </button>
+                        </span>
             <h4 class="cust-list text-center">
                 <i class="glyphicon glyphicon-user"></i>
             </h4>
@@ -10,9 +43,8 @@
                     <h5>{{customer.email}}</h5>
                     <small class="list-group-item-text text-muted">
                         <span data-ng-bind="customer.created | date:'medium'"></span>
-
                         <span class="pull-right">
-                            <button class="btn btn-default btn-xs" id = "delete" data-ng-click="remove(customer)">
+                            <button class="btn btn-default btn-xs" id = "delete" data-ng-click="customer.remove(customer)">
                                 <i class="glyphicon glyphicon-trash"></i>
                             </button>
                         </span>
@@ -22,7 +54,6 @@
         </a>
     </div>
 </div>
-<div class="alert alert-warning text-center" data-ng-hide="!customers.$resolved || customers.length">
+<div class="alert alert-warning text-center" data-ng-hide="!customer.$resolved || customer.length">
     No Users yet, why don't you <a data-ng-click="modalCreate('lg')">create one</a>?
 </div>
-

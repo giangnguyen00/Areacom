@@ -93,11 +93,12 @@ customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authe
 
         //// Remove existing Customer
         this.remove = function(customer) {
+            console.log('enter remove');
         	if ( customer ) {
         		customer.$remove();
 
         		for (var i in this.customers) {
-        			if (this.customers [i] == customer) {
+        			if (this.customers [i] === customer) {
         				this.customers.splice(i, 1);
         			}
         		}
@@ -105,6 +106,8 @@ customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authe
         		this.customer.$remove(function() {
         		});
         	}
+
+            console.log('finish remove');
         };
 
 
@@ -162,7 +165,7 @@ customersApp.controller('CustomersUpdateController', ['$scope', 'Customers',
         //};
 
         // Update existing Customer
-        this.update = function(updatedCustomer) {
+        $scope.update = function(updatedCustomer) {
             console.log("Now calling the Update Method");
             var customer = updatedCustomer;
             customer.$update(function() {
@@ -178,12 +181,12 @@ customersApp.directive('customerList', ['Customers','Notify', function(Customers
         restrict: 'E',
         transclude: true,
         templateUrl: 'modules/customers/views/customer-list-template.html',
-        link: function(scope, element, attrs){
+        link: function($scope, element, attrs){
 
             //When a new customer is added, update the customer list
 
             Notify.getMsg('NewCustomer', function(event, data){
-                scope.CustomerCtrl.customers = Customers.query();
+                $scope.CustomerCtrl.customers = Customers.query();
             });
         }
     };
