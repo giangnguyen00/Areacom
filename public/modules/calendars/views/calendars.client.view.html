@@ -6,7 +6,7 @@
         <div class = "col-sm-4">
             <div class="list-group">
                 <!--#!/contracts/{{contract._id}}-->
-                <a data-ng-repeat="contract in contracts" data-ng-click="CalCtrl.openModal(lg, contract)" data-ng-if="day.format('MM/DD/YYYY').getTime() === contract.StartDate.format('MM/DD/YYYY').getTime()" class="list-group-item">
+                <a data-ng-repeat="contract in contracts" data-ng-click="CalCtrl.openModal(lg, contract)" data-ng-if="day.format('MM/DD/YYYY') == contract.StartDate.format('MM/DD/YYYY')" class="list-group-item">
                     <h1 class="list-group-item-heading text-center" data-ng-bind="contract.name"> ></h1>
 
                 </a>
