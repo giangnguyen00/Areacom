@@ -131,7 +131,7 @@ div.week:last-child
 
     background-color: #3B0B2E;
 }
-.glyphicon{
+#event-indicator{
     position: absolute;
     margin-top:35px ;
     right: 50px;
