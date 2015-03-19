@@ -49,7 +49,7 @@ div.header > i.fa-angle-left {
     width: 33.33%;
     text-align: center;
 
-    border: 1px solid black;
+    border: 1px solid #660000;
     border-top: 0;
     border-right: 0;
     box-sizing: border-box;
@@ -60,7 +60,7 @@ div.header > i.fa-angle-right {
     /*margin-left: -40px;*/
     text-align: center;
 
-    border: 1px solid black;
+    border: 1px solid #660000;
     border-top: 0;
     box-sizing: border-box;
 }
@@ -79,10 +79,9 @@ div.header > i.fa-angle-right {
     color: inherit;
     height: 100%;
 
-    border: 1px solid black;
+    border: 1px solid #660000;
     border-top: 0;
     border-right: 0;
-    box-sizing: border-box;
 }
  div.week {
     float: left;
