@@ -75,13 +75,11 @@ angular.module('calendars').directive('calendars', [
 				};
 
                 scope.hasContract = function(day) {
+                	var date1 = moment(day.date).format('MM/DD/YYYY');
                     var result = false;
                     angular.forEach(scope.contracts ,function(value, index){
-                    	var date1 = $filter('date')(day.date, "YYYY-MM-DD");
-                    	var date2 = $filter('date')(value.startDate, "YYYY-MM-DD");
-                    	alert(date1);
-                    	alert(date2);
-                        if(day.date === value.StartDate) {
+                    	var date2 = moment(value.StartDate).format('MM/DD/YYYY');
+                        if(date1 == date2) {
                             result = true;
                         }
                     });

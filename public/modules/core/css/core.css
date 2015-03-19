@@ -28,7 +28,17 @@ body.ng-cloak
 	float: right;
     margin: 0;
 }
-#option{
+.tab
+{
+	width: 25%;
+	text-align: center;
+	border: 1px solid #888;
+}
+.tab:not(:last-child)
+{
+	border-right: 0;
+}
+.option
+{
 	color: #686868 !important;
-	
 }
