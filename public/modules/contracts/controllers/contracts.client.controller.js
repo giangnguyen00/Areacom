@@ -82,6 +82,17 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 			});
 		};
 
+		// Update existing contract from modal View from Calendar
+		$scope.updateContractFromModal = function(updatedContract) {
+			alert(updatedContract.name);
+			var contract = updatedContract;
+
+			contract.$update(function() {
+			}, function(errorResponse) {
+				$scope.error = errorResponse.data.message;
+			});
+		};
+
 		// Find a list of Contracts
 		$scope.find = function() {
 			$scope.contracts = Contracts.query();

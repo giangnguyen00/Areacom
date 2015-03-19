@@ -131,14 +131,15 @@ div.week:last-child
 
     background-color: #3B0B2E;
 }
-.grad{
+.glyphicon{
     position: absolute;
-    bottom:2px;
+    margin-top:35px ;
+    right: 50px;
     width:15px;
     height:15px;
     border-radius:50px;
-    margin-left: 42%;
-    background:linear-gradient(to bottom, #995675, #666699)
+    font-size: 1.9em;
+    color:#880020;
 }
 
  div.week > span.day.different-month {
