@@ -1,4 +1,4 @@
-<section data-ng-controller="CustomersUpdateController as customerUpCtrl">
+<section data-ng-controller="CustomersController as customerUpCtrl">
     <div class="modal-header">
         <h3 class="modal-title">Update: {{customer.firstName}} {{customer.lastName}} </h3>
     </div>
@@ -40,7 +40,7 @@
     </div>
 
     <div class="modal-footer">
-        <button class="btn btn-success" id ="edit" data-ng-click="customerUpCtrl.update(customer);ok()" data-ng-disabled="updateCustomerForm.$invalid">Update & Close</button>
+        <button class="btn btn-success" id ="editButton" data-ng-click="customerUpCtrl.update(customer);ok()" data-ng-disabled="updateCustomerForm.$invalid">Update & Close</button>
     <button class="btn btn-warning" data-ng-click="cancel()">Cancel</button>
     </div>
 

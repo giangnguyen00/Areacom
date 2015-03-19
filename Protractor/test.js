@@ -108,33 +108,33 @@ describe('AreaCommunications Project', function() {
     //});
 
 
-    // working
-    //it('should be able to create new users', function() {
-    //    element(by.linkText('Area Communications')).click();
-    //    element(by.linkText('Users')).click();
-    //    element(by.id('newUser')).click();
-    //
-    //    element(by.model('credentials.firstName')).sendKeys('Sangeetha');
-    //    element(by.model('credentials.lastName')).sendKeys('Matchanickal');
-    //    element(by.model('credentials.email')).sendKeys('test@test.com');
-    //    element(by.model('credentials.username')).sendKeys('usertest');
-    //    element(by.model('credentials.password')).sendKeys('userPassword');
-    //
-    //    expect(element(by.model('credentials.firstName')).getAttribute('value')).toEqual('Sangeetha');
-    //    expect(element(by.model('credentials.lastName')).getAttribute('value')).toEqual('Matchanickal');
-    //    expect(element(by.model('credentials.email')).getAttribute('value')).toEqual('test@test.com');
-    //    expect(element(by.model('credentials.username')).getAttribute('value')).toEqual('usertest');
-    //    expect(element(by.model('credentials.password')).getAttribute('value')).toEqual('userPassword');
-    //
-    //    element(by.id('saveClose')).click();
-    //    browser.sleep(3000);
-    //});
+    //working
+    it('should be able to create new users', function() {
+        element(by.linkText('Area Communications')).click();
+        element(by.linkText('Users')).click();
+        element(by.id('newUser')).click();
+
+        element(by.model('credentials.firstName')).sendKeys('Sangeetha');
+        element(by.model('credentials.lastName')).sendKeys('Matchanickal');
+        element(by.model('credentials.email')).sendKeys('test@test.com');
+        element(by.model('credentials.username')).sendKeys('usertest');
+        element(by.model('credentials.password')).sendKeys('userPassword');
+
+        expect(element(by.model('credentials.firstName')).getAttribute('value')).toEqual('Sangeetha');
+        expect(element(by.model('credentials.lastName')).getAttribute('value')).toEqual('Matchanickal');
+        expect(element(by.model('credentials.email')).getAttribute('value')).toEqual('test@test.com');
+        expect(element(by.model('credentials.username')).getAttribute('value')).toEqual('usertest');
+        expect(element(by.model('credentials.password')).getAttribute('value')).toEqual('userPassword');
+
+        element(by.id('saveClose')).click();
+        browser.sleep(1000);
+    });
 
     // working
     it('should be able to update users', function() {
         element(by.linkText('Area Communications')).click();
         element(by.linkText('Users')).click();
-        element(by.id('list')).click();
+        element(by.id('edit')).click();
 
         element(by.model('customer.firstName')).clear();
         element(by.model('customer.firstName')).sendKeys('updateName');
@@ -148,7 +148,7 @@ describe('AreaCommunications Project', function() {
         //element(by.model('customer.password')).clear();
         //element(by.model('customer.password')).sendKeys('updatePassword');
 
-        element(by.id('edit')).click();
+        element(by.id('editButton')).click();
         browser.sleep(2000);
     });
 
@@ -162,6 +162,8 @@ describe('AreaCommunications Project', function() {
 
     // working
     it('should be able to search users', function() {
+        element(by.linkText('Area Communications')).click();
+        element(by.linkText('Users')).click();
         element(by.model('searchText')).sendKeys('update');
         element(by.model('searchText')).clear();
         element(by.model('searchText')).sendKeys('Sangeetha');
