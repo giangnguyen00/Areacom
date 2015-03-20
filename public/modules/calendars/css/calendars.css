@@ -147,7 +147,7 @@ div.week:last-child
     color: lightgrey;
 }
  div.week > span.day.selected {
-    background: #3B0B17;
+    background: #66FF33;
     color: white;
 }
 

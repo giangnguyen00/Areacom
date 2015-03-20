@@ -7,7 +7,7 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
         $scope.authentication = Authentication;
 
         $scope.changeState = function(){
-            $state.go('calendars');
+            $state.go('main.calendars');
         };
     }
 ]);
