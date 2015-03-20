@@ -1,1 +1,105 @@
-<h1>What the heck? </h1>
+<section data-ng-controller="ContractsController as ConCtrl" data-ng-init="find()">
+    <div class="modal-header">
+        <h3 class="modal-title" style = "color: #880020">Contract: {{contract.name}} </h3>
+    </div>
+    <div class="modal-body">
+        <form name="ContractUpdateForm">
+            <fieldset>
+                <div data-ng-show = "error" class = "text-center text-danger">
+                    <strong data-ng-bind = "error"> Error </strong>
+                </div>
+                <div class="col-md-12">
+                    <label class="control-label" for="name">Name</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.name" id="name" class="form-control" placeholder="Name" required>
+                    </div>
+
+                    <label class="control-label" for="towerCloudSiteId">Tower Cloud Site ID</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.tcsiteID" id="tcsiteID" class="form-control" placeholder="Site ID" required>
+                    </div>
+
+                    <label class="control-label" for="street">Street</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.address" id="email" class="form-control" placeholder="Street">
+                    </div>
+
+                    <label class="control-label" for="city">City</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.city" id="city" class="form-control" placeholder="City">
+                    </div>
+
+                    <label class="control-label" for="state">State</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.state" id="state" class="form-control" placeholder="State">
+                    </div>
+
+                    <label class="control-label" for="zip">Zipcode</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.zip" id="zip" class="form-control" placeholder="Zip code">
+                    </div>
+
+                    <label class="control-label" for="latitude">Latitude</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.lat" id="lat" class="form-control" placeholder="Latitude">
+                    </div>
+
+                    <label class="control-label" for="longitude">Longitude</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.longit" id="longit" class="form-control" placeholder="Longitute">
+                    </div>
+
+                    <label class="control-label" for="TowerOwnerSiteID">Tower Owner Site ID</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.tositeID" id="tositeID" class="form-control" placeholder="Site ID" required>
+                    </div>
+
+                    <label class="control-label" for="TowerOwner">Tower Owner</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.towner" id="towner" class="form-control" placeholder="Tower Owner">
+                    </div>
+
+                    <label class="control-label" for="poBox">P.O. #</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.pobox" id="pobox" class="form-control" placeholder="P.O. #">
+                    </div>
+
+                    <label class="control-label" for="NumberOfDishes">Number of Dishes</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.numdish" id="numdish" class="form-control" placeholder="# of Dishes">
+                    </div>
+
+                    <label class="control-label" for="Start Date">Start Date</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.StartDate" id="StartDate" class="form-control" placeholder="MM/DD/YYYY">
+                    </div>
+                    <label class="control-label" for="End Date">End Date</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.EndDate" id="EndDate" class="form-control" placeholder="MM/DD/YYYY">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox" data-ng-model="contract.ntp"> NTP
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox" data-ng-model="contract.towerbool"> Is this a tower?
+                        </label>
+                    </div>
+
+                    <label class="control-label" for="Note">Notes</label>
+                    <div class="controls">
+                         <textarea class="form-control"  rows="3" data-ng-model="contract.notes"id="notes" placeholder="Add any notes here..."></textarea>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-success" id ="editButton" data-ng-click="ConCtrl.updateContractFromModal(contract);ok()" data-ng-disabled="ContractUpdateForm.$invalid">Update</button>
+        <button class="btn btn-warning" data-ng-click="cancel()">Cancel</button>
+    </div>
+
+</section>

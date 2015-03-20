@@ -10,12 +10,25 @@ angular.module('calendars').controller('CalendarsController', ['$scope', 'Contra
         $scope.find = function() {
             $scope.contracts = Contracts.query();
         };
+        $scope.compareDate = function(day){
+            var result = false;
+            var date1 = moment(day).format('MM/DD/YYYY');
+            alert(date1);
+            angular.forEach(scope.contracts, function(value){
+                 var date2 = moment(value.StartDate).format('MM/DD/YYYY');
+                 if(date1 == date2){
+                     result = true;
+                 }
+                   
+            });
+            return result;
+        }
 
-        //Open Modal Window to 
+        //Open Modal Window to view and update contract
         this.openModal = function (size, selectedContract) {
 
             var modalInstance = $modal.open({
-                templateUrl: '/modules/contracts/views/view-contract-from-calendar.client.view.html',
+                templateUrl: '/modules/contracts/views/contract-from-calendar.client.view.html',
                 controller: function ($scope, $modalInstance, $stateParams, contract) {
                     $scope.contract = contract;
 
