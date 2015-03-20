@@ -22,7 +22,7 @@ angular.module('calendars').controller('CalendarsController', ['$scope', 'Contra
                    
             });
             return result;
-        }
+        };
 
         //Open Modal Window to view and update contract
         this.openModal = function (size, selectedContract) {
