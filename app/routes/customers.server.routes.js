@@ -9,6 +9,9 @@ module.exports = function(app) {
 		.get(customers.list)
 		.post(users.requiresLogin, customers.create);
 
+    //app.route('/customers/update')
+    //    .post(users.updateSingleUser);
+
 	app.route('/customers/:customerId')
 		.get(customers.read)
 		.put(users.requiresLogin, customers.hasAuthorization, customers.update)

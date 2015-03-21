@@ -10,6 +10,49 @@ var _ = require('lodash'),
 	User = mongoose.model('User');
 
 /**
+ * Updating a single user
+ */
+exports.updateSingleUser = function(req, res){
+
+    // Init Variables
+    var user = req.user;
+    var message = null;
+
+    // For security measurement we remove the roles from the req.body object
+    delete req.body.roles;
+
+    if (user) {
+        // Merge existing user
+        user = _.extend(user, req.body);
+        user.updated = Date.now();
+        user.displayName = user.firstName + ' ' + user.lastName;
+
+        user.save(function(err) {
+            if (err) {
+                return res.status(400).send({
+                    message: errorHandler.getErrorMessage(err)
+                });
+            } else {
+                //req.login(user, function(err) {
+                //    if (err) {
+                //        res.status(400).send(err);
+                //    } else {
+                //        res.json(user);
+                //    }
+                //});
+            }
+        });
+    } else {
+        res.status(400).send({
+            message: 'User is not signed in'
+        });
+    }
+
+};
+
+
+
+/**
  * Signup
  */
 exports.signup = function(req, res) {
@@ -218,4 +261,24 @@ exports.list = function(req, res) {
             res.jsonp(results);
         }
     });
+};
+
+// deleting a single user
+exports.delete = function(req, res) {
+    User.findOne({_id:request.body._id}).sort('-created').exec(function(err, result) {
+// put http request
+        result.remove(function(err) {
+            if (err) {
+                return res.status(400).send({
+                    message: errorHandler.getErrorMessage(err)
+                });
+            } else {
+                console.log("removed");
+            }
+        });
+
+
+    });
+
+
 };
