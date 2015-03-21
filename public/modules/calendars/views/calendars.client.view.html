@@ -1,4 +1,4 @@
-<section data-ng-controller="CalendarsController as CalCtrl" data-ng-init="find()" data-ng-init="getToday">
+<section data-ng-controller="CalendarsController as CalCtrl" data-ng-init="find(); day = null" >
     <div class = "row">
         <div class = "col-sm-9">
             <calendars selected="day" contracts="contracts"></calendars>
@@ -6,11 +6,14 @@
         <div class = "col-sm-3">
             <div class="list-group">
                 <!--#!/contracts/{{contract._id}}-->
-                <a data-ng-repeat="contract in contracts" data-ng-click="CalCtrl.openModal(lg, contract)" data-ng-if=
-                "moment(day.date).format('MM/DD/YYYY') === moment(contract.StartDate).format('MM/DD/YYYY')" class="list-group-item">
+                <div ng-repeat = "contract in contracts">
+                    
+                <a ng-if = "dateMatch(day, contract)" data-ng-click="CalCtrl.openModal(lg, contract)" class="list-group-item">
+
                     <h1 class="list-group-item-heading text-center" data-ng-bind="contract.name"></h1>
 
                 </a>
+            </div>
             </div>
         </div>
     </div>

@@ -10,6 +10,9 @@ angular.module('calendars').controller('CalendarsController', ['$scope', 'Contra
         $scope.find = function() {
             $scope.contracts = Contracts.query();
         };
+        $scope.dateMatch = function(day, contract){
+            return moment(day).format("MM/DD/YYYY") == moment(contract.StartDate).format("MM/DD/YYYY");
+        }
         $scope.compareDate = function(day){
             var result = false;
             var date1 = moment(day).format('MM/DD/YYYY');
