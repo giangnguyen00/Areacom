@@ -44,7 +44,8 @@ customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authe
                     };
                 },
 
-                size: size
+                size: size,
+
             });
 
             modalInstance.result.then(function (selectedItem) {
@@ -68,7 +69,6 @@ customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authe
                             $modalInstance.close($scope.customer);
                         }
                             //$modalInstance.close($scope.customer);
-
                     };
 
                     $scope.cancel = function () {
@@ -91,23 +91,43 @@ customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authe
             });
         };
 
+
+        //Update existing
+        this.update = function(updatedCustomer) {
+            console.log("Now calling the Update Method");
+            var customer = updatedCustomer;
+            console.log(updatedCustomer);
+            $http.post('/users/update', customer).success(function(response) {
+
+            }).error(function(response) {
+                $scope.error = response.message;
+            });
+
+            //customer.$update(function() {
+            //},function(errorResponse) {
+            //    this.error = errorResponse.data.message;
+            //});
+        };
+
+
         //// Remove existing Customer
-        this.remove = function(customer) {
-            console.log('enter remove');
+        $scope.test = function(customer) {
+            console.log("Now calling the remove Method");
         	if ( customer ) {
         		customer.$remove();
-
-        		for (var i in this.customers) {
-        			if (this.customers [i] === customer) {
-        				this.customers.splice(i, 1);
+                console.log("got here");
+        		for (var i in $scope.userList) {
+        			if ($scope.userList [i] === customer) {
+                        $scope.userList.splice(i, 1);
         			}
         		}
         	} else {
-        		this.customer.$remove(function() {
+                $scope.userList.$remove(function() {
+                    //$location.path('customers');
         		});
         	}
 
-            console.log('finish remove');
+            console.log("Now finishing the remove Method");
         };
 
 
@@ -163,16 +183,6 @@ customersApp.controller('CustomersUpdateController', ['$scope', 'Customers',
         //		$scope.error = errorResponse.data.message;
         //	});
         //};
-
-        // Update existing Customer
-        $scope.update = function(updatedCustomer) {
-            console.log("Now calling the Update Method");
-            var customer = updatedCustomer;
-            customer.$update(function() {
-            },function(errorResponse) {
-                $scope.error = errorResponse.data.message;
-            });
-        };
     }
 ]);
 
