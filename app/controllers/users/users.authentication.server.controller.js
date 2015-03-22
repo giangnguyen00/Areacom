@@ -263,22 +263,40 @@ exports.list = function(req, res) {
     });
 };
 
-// deleting a single user
-exports.delete = function(req, res) {
-    User.findOne({_id:request.body._id}).sort('-created').exec(function(err, result) {
-// put http request
-        result.remove(function(err) {
-            if (err) {
+//// deleting a single user
+//exports.delete = function(req, res) {
+//    User.findOne({_id:request.body._id}).sort('-created').exec(function(err, result) {
+//
+//        result.remove(function(err) {
+//            if (err) {
+//                return res.status(400).send({
+//                    message: errorHandler.getErrorMessage(err)
+//                });
+//            } else {
+//                console.log("removed");
+//            }
+//        });
+//
+//
+//    });
+//
+//
+//};
+
+exports.deleteUser = function(req, res) {
+
+    User.findOne({}).sort('-created').exec(function(err, result) {
+
+        result.remove(function (err)
+        {
+            if (err)
+            {
                 return res.status(400).send({
                     message: errorHandler.getErrorMessage(err)
                 });
             } else {
-                console.log("removed");
+                res.jsonp(result);
             }
         });
-
-
     });
-
-
 };

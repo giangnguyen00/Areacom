@@ -30,13 +30,13 @@
     <div class ="col-xs-6 col-sm-3 extra-space" data-ng-repeat="customer in userList | filter:searchText">
         <a class="list-group-item">
                      <span class="pull-right">
-                            <button class="btn btn-default btn-xs" id = "edit" data-ng-click="modalUpdate('lg',customer)">
+                            <button class="btn btn-default btn-xs" id = "editUser" data-ng-click="modalUpdate('lg',customer)">
                                 <i class="glyphicon glyphicon-edit"></i>
                             </button>
                         </span>
 
                         <span class="pull-right">
-                            <button class="btn btn-default btn-xs" id = "delete" data-ng-click="test(customer)">
+                            <button class="btn btn-default btn-xs" id = "delete" data-ng-click="remove(customer)">
                                 <i class="glyphicon glyphicon-trash"></i>
                             </button>
                         </span>

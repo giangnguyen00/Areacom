@@ -6,12 +6,10 @@
         <div class = "col-sm-3">
             <div class="list-group">
                 <!--#!/contracts/{{contract._id}}-->
-                <div ng-repeat = "contract in contracts">
+                <div data-ng-repeat = "contract in contracts">
                     
-                <a ng-if = "dateMatch(day, contract)" data-ng-click="CalCtrl.openModal(lg, contract)" class="list-group-item">
-
+                <a data-ng-if = "dateMatch(day, contract)" data-ng-click="CalCtrl.openModal(lg, contract)" class="list-group-item">
                     <h1 class="list-group-item-heading text-center" data-ng-bind="contract.name"></h1>
-
                 </a>
             </div>
             </div>

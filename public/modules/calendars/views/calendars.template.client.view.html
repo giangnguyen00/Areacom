@@ -1,9 +1,9 @@
 <div class="header" data-ng-swipe-right="previous()" data-ng-swipe-left="next()">
-    <i class="fa fa-angle-left" data-ng-click="previous()" ></i>
+    <i class="fa fa-angle-left" id = "previous" data-ng-click="previous()" ></i>
         <span>
             {{month.format("MMMM, YYYY")}}
         </span>
-    <i class="fa fa-angle-right" data-ng-click="next()"></i>
+    <i class="fa fa-angle-right" id = "next" data-ng-click="next()"></i>
 </div>
 <div class="week names" data-ng-swipe-right="previous()" data-ng-swipe-left="next()">
     <span class="day">Sun</span>
@@ -15,7 +15,10 @@
     <span class="day">Sat</span>
 </div>
 <div class="week" data-ng-repeat="week in weeks" data-ng-swipe-right="previous()" data-ng-swipe-left="next()">
-    <span class="day" data-ng-class="{ today: day.isToday, 'different-month': !day.isCurrentMonth, selected: day.date.isSame(selected) }" ng-click="select(day)" ng-repeat="day in week.days">{{day.number}}
+    <span class="day" data-ng-class="{ today: day.isToday, 'different-month': !day.isCurrentMonth, selected: day.date.isSame(selected) }" data-ng-click="select(day)" data-ng-repeat="day in week.days">{{day.number}}
+    <div class="glyphicon glyphicon-zoom-in" data-ng-class="{eventExist: hasContract(day), hidden: !hasContract(day)}" id ="event-indicator" ></div></span>
+    <!--<button class="btn btn-danger btn-xs" data-ng-class="{eventExist: hasContract(day), hidden: !hasContract(day)}" data-ng-click="modalUpdate('lg',customer)">-->
+        <!--<i class="glyphicon glyphicon-zoom-in" id = "event-indicator" ></i>-->
+    <!--</button>-->
 
-    <div id = "event-indicator" class="glyphicon glyphicon-zoom-in" ng-class="{eventExist: hasContract(day), hidden: !hasContract(day)}"></div></span>
 </div>

@@ -96,7 +96,6 @@ customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authe
         this.update = function(updatedCustomer) {
             console.log("Now calling the Update Method");
             var customer = updatedCustomer;
-            console.log(updatedCustomer);
             $http.post('/users/update', customer).success(function(response) {
 
             }).error(function(response) {
@@ -110,26 +109,49 @@ customersApp.controller('CustomersController', ['$scope', '$stateParams', 'Authe
         };
 
 
-        //// Remove existing Customer
-        $scope.test = function(customer) {
+        // Remove existing Customer
+        $scope.remove = function(customer) {
             console.log("Now calling the remove Method");
-        	if ( customer ) {
-        		customer.$remove();
-                console.log("got here");
-        		for (var i in $scope.userList) {
-        			if ($scope.userList [i] === customer) {
-                        $scope.userList.splice(i, 1);
-        			}
-        		}
-        	} else {
-                $scope.userList.$remove(function() {
-                    //$location.path('customers');
-        		});
-        	}
+            var cust = customer;
+            if(cust.roles == 'user')
+            {
+                console.log("user");
+            }
 
-            console.log("Now finishing the remove Method");
+                $http.post('/users/delete', cust).success(function(response) {
+                    console.log("called post");
+                    //customer.$remove();
+
+                    //for (var i in $scope.userList) {
+                    //	if ($scope.userList [i] === customer) {
+                    //       $scope.userList.splice(i, 1);
+                    //	}
+                    //}
+                }). error(function(response) {
+                    console.log("error");
+                    $scope.error = response.message;
+                });
+            console.log("end post");
         };
 
+        //// Remove existing Customer
+        //$scope.remove = function(customer) {
+        //
+        //    console.log("Now calling the remove Method");
+        //    if ( customer ) {
+        //        customer.$remove();
+        //
+        //        for (var i in $scope.customers) {
+        //            if ($scope.customers [i] === customer) {
+        //                $scope.customers.splice(i, 1);
+        //            }
+        //        }
+        //    } else {
+        //        $scope.customer.$remove(function() {
+        //            $location.path('customers');
+        //        });
+        //    }
+        //};
 
     }
 ]);
