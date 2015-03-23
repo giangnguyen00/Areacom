@@ -47,9 +47,9 @@ describe('User Model Unit Tests:', function() {
 		//	});
 		//});
 
-		it('should be able to save without problems', function(done) {
-			user.save(done);
-		});
+		//it('should be able to save without problems', function(done) {
+		//	user.save(done);
+		//});
 
 		it('should fail to save an existing user again', function(done) {
 			user.save();
@@ -115,7 +115,7 @@ describe('User Model Unit Tests:', function() {
             });
         });
 
-        it('should be able to show an error when try to save with invalid ( too short) password', function(done) {
+        it('should be able to show an error when try to save with invalid (too short) password', function(done) {
             user.password = 'short';
             return user.save(function(err) {
                 should.exist(err);
@@ -124,8 +124,8 @@ describe('User Model Unit Tests:', function() {
         });
 	});
 
-	after(function(done) {
-		User.remove().exec();
-		done();
-	});
+	//after(function(done) {
+	//	User.remove().exec();
+	//	done();
+	//});
 });

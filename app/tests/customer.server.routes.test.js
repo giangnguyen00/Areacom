@@ -9,13 +9,13 @@
 //    agent = request.agent(app);
 //
 ///**
-// * Globals
-// */
+//* Globals
+//*/
 //var credentials, user, customer;
 //
 ///**
-// * Customer routes tests
-// */
+//* Customer routes tests
+//*/
 //describe('Customer CRUD tests', function() {
 //    beforeEach(function(done) {
 //        // Create user credentials

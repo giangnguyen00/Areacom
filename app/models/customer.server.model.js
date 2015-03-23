@@ -37,7 +37,7 @@ var CustomerSchema = new Schema({
     password: {
         type: String,
         default: '',
-        required: 'Please fill Customer password name',
+        required: 'Please fill Customer password',
         trim: true
     },
 

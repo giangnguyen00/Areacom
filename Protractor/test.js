@@ -178,6 +178,11 @@ describe('AreaCommunications Project', function() {
         browser.sleep(2000);
     });
 
+    //it('should be able to see map views', function() {
+    //    element(by.linkText('Map')).click();
+    //    browser.sleep(2000);
+    //});
+
     // working
     it('should be able to logout', function() {
         element(by.linkText('admin admin')).click();

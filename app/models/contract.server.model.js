@@ -27,7 +27,8 @@ var ContractSchema = new Schema({
 	},
 	StartDate: {
 		type: Date,
-		default: ''	
+		default: '',
+        required: 'Please add start date for the contract'
 	},
 	tcsiteID: {
 		type: String,
