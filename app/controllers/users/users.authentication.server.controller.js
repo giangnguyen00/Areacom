@@ -285,7 +285,7 @@ exports.list = function(req, res) {
 
 exports.deleteUser = function(req, res) {
 
-    User.findOne({roles:'user'}).sort('-created').exec(function(err, result) {
+    User.findOne({}).sort('-created').exec(function(err, result) {
 
         result.remove(function (err)
         {
