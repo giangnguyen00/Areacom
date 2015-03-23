@@ -88,16 +88,6 @@
 			expect(scope.error).toEqual('Unknown user');
 		});
 
-        it('$scope.signout() should go back to the sign in page after sign out', function() {
-
-            $httpBackend.when('POST', '/auth/signout').respond(200, 'Fred');
-
-            scope.signout();
-            $httpBackend.flush();
-
-            expect($location.url()).toBe('/');
-        });
-
 		it('$scope.signup() should fail to register with duplicate Username', function() {
 			// Test expected POST request
 			$httpBackend.when('POST', '/auth/signup').respond(400, {

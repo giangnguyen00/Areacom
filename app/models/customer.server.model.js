@@ -41,14 +41,6 @@ var CustomerSchema = new Schema({
         trim: true
     },
 
-    //roles: {
-    //    type: [{
-    //        type: String,
-    //        enum: ['user', 'admin']
-    //    }],
-    //    default: ['user']
-    //},
-
 	created: {
 		type: Date,
 		default: Date.now
