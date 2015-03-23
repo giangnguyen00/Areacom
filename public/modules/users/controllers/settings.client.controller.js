@@ -21,22 +21,22 @@ angular.module('users').controller('SettingsController', ['$scope', '$http', '$l
 			return $scope.user.provider === provider || ($scope.user.additionalProvidersData && $scope.user.additionalProvidersData[provider]);
 		};
 
-		// Remove a user social account
-		$scope.removeUserSocialAccount = function(provider) {
-			$scope.success = $scope.error = null;
-
-			$http.delete('/users/accounts', {
-				params: {
-					provider: provider
-				}
-			}).success(function(response) {
-				// If successful show success message and clear form
-				$scope.success = true;
-				$scope.user = Authentication.user = response;
-			}).error(function(response) {
-				$scope.error = response.message;
-			});
-		};
+		//// Remove a user social account
+		//$scope.removeUserSocialAccount = function(provider) {
+		//	$scope.success = $scope.error = null;
+        //
+		//	$http.delete('/users/accounts', {
+		//		params: {
+		//			provider: provider
+		//		}
+		//	}).success(function(response) {
+		//		// If successful show success message and clear form
+		//		$scope.success = true;
+		//		$scope.user = Authentication.user = response;
+		//	}).error(function(response) {
+		//		$scope.error = response.message;
+		//	});
+		//};
 
 		// Update a user profile
 		$scope.updateUserProfile = function(isValid) {
