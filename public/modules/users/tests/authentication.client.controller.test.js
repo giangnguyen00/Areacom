@@ -55,7 +55,7 @@
 
 			// Test scope value
 			expect(scope.authentication.user).toEqual('Fred');
-			expect($location.url()).toEqual('/');
+			expect($location.url()).toEqual('/main');
 		});
 
 		it('$scope.signin() should fail to log in with nothing', function() {
@@ -88,19 +88,15 @@
 			expect(scope.error).toEqual('Unknown user');
 		});
 
-		it('$scope.signup() should register with correct data', function() {
-			// Test expected GET request
-			scope.authentication.user = 'Fred';
-			$httpBackend.when('POST', '/auth/signup').respond(200, 'Fred');
+        it('$scope.signout() should go back to the sign in page after sign out', function() {
 
-			scope.signup();
-			$httpBackend.flush();
+            $httpBackend.when('POST', '/auth/signout').respond(200, 'Fred');
 
-			// test scope value
-			expect(scope.authentication.user).toBe('Fred');
-			expect(scope.error).toEqual(undefined);
-			expect($location.url()).toBe('/');
-		});
+            scope.signout();
+            $httpBackend.flush();
+
+            expect($location.url()).toBe('/');
+        });
 
 		it('$scope.signup() should fail to register with duplicate Username', function() {
 			// Test expected POST request
@@ -114,5 +110,24 @@
 			// Test scope value
 			expect(scope.error).toBe('Username already exists');
 		});
+
+        it('$scope.signup() should fail to register with password less than 6 characters', function() {
+            // Test expected POST request
+            scope.authentication.user = 'Sangeetha';
+            scope.password = 'hi';
+            $httpBackend.when('POST', '/auth/signup').respond(400, {
+                'message': 'Password should be longer'
+            });
+
+            scope.signup();
+            $httpBackend.flush();
+
+            // Test scope value
+            expect(scope.error).toBe('Password should be longer');
+        });
+
+
+
+
 	});
 }());
