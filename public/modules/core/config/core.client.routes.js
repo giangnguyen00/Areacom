@@ -32,14 +32,6 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 					templateUrl: 'modules/contracts/views/list-contracts.client.view.html'
 				}
 			}
-		}).
-		state('main.map', {
-			views: {
-				url: "/test",
-				'name':{
-					templateUrl: 'modules/maps/views/main-map.client.view.html'
-				}
-			}
 		});
 	}
 ]);
