@@ -99,6 +99,7 @@
 
     <div class="modal-footer">
         <button class="btn btn-success" id ="editButton" data-ng-click="ConCtrl.updateContractFromModal(contract);ok()" data-ng-disabled="ContractUpdateForm.$invalid">Update</button>
+        <button class="btn btn-danger" data-ng-click="ConCtrl.removeContractFromModal(contract)">Delete</button>
         <button class="btn btn-warning" data-ng-click="cancel()">Cancel</button>
     </div>
 

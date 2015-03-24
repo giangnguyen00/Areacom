@@ -82,6 +82,23 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 			});
 		};
 
+		this.removeContractFromModal = function(removedContract) {
+			var contract = removedContract
+			if ( contract ) { 
+				contract.$remove();
+
+				for (var i in $scope.contracts) {
+					if ($scope.contracts [i] === contract) {
+						$scope.contracts.splice(i, 1);
+					}
+				}
+			} else {
+				$scope.contract.$remove(function() {
+					$location.path('contracts');
+				});
+			}
+		};
+
 		// Update existing contract from modal View from Calendar
 		this.updateContractFromModal = function(updatedContract) {
 			var contract = updatedContract;
