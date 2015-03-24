@@ -17,8 +17,4 @@
 <div class="week" data-ng-repeat="week in weeks" data-ng-swipe-right="previous()" data-ng-swipe-left="next()">
     <span class="day" data-ng-class="{ today: day.isToday, 'different-month': !day.isCurrentMonth, selected: day.date.isSame(selected) }" data-ng-click="select(day)" data-ng-repeat="day in week.days">{{day.number}}
     <div class="glyphicon glyphicon-zoom-in" data-ng-class="{eventExist: hasContract(day), hidden: !hasContract(day)}" id ="event-indicator" ></div></span>
-    <!--<button class="btn btn-danger btn-xs" data-ng-class="{eventExist: hasContract(day), hidden: !hasContract(day)}" data-ng-click="modalUpdate('lg',customer)">-->
-        <!--<i class="glyphicon glyphicon-zoom-in" id = "event-indicator" ></i>-->
-    <!--</button>-->
-
 </div>

@@ -36,7 +36,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    //padding: 0 10px;
+    padding: 0 10px;
     cursor: pointer;
     height: 100%;
 }
@@ -85,7 +85,7 @@ div.header > i.fa-angle-right {
 }
  div.week {
     float: left;
-    width: 100%;
+    width: 99.7%;
     border-top: solid 1px #cccccc;
 }
 .week.names .day

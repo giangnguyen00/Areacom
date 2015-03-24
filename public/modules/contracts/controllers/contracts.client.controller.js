@@ -53,7 +53,7 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 				$scope.error = errorResponse.data.message;
 			});
 		};
-
+		
 		// Remove existing Contract
 		$scope.remove = function(contract) {
 			if ( contract ) { 
@@ -84,7 +84,6 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 
 		// Update existing contract from modal View from Calendar
 		this.updateContractFromModal = function(updatedContract) {
-			alert(updatedContract.name);
 			var contract = updatedContract;
 
 			contract.$update(function() {
