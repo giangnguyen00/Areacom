@@ -53,7 +53,23 @@
 //		it('$scope.find() should create an array with at least one Contract object fetched from XHR', inject(function(Contracts) {
 //			// Create sample Contract using the Contracts service
 //			var sampleContract = new Contracts({
-//				name: 'New Contract'
+//				name: 'New Contract',
+//                StartDate: '3/25/2015',
+//                tcsiteID: '35',
+//                tositeID: '23',
+//                towner:'',
+//                pobox:'',
+//                numdish:'',
+//                address:'',
+//                city:'',
+//                state:'',
+//                zip:'',
+//                EndDate:'',
+//                longit:'',
+//                lat:'',
+//                ntp:'',
+//                towerbool:'',
+//                notes:''
 //			});
 //
 //			// Create a sample Contracts array that includes the new Contract
@@ -73,7 +89,23 @@
 //		it('$scope.findOne() should create an array with one Contract object fetched from XHR using a contractId URL parameter', inject(function(Contracts) {
 //			// Define a sample Contract object
 //			var sampleContract = new Contracts({
-//				name: 'New Contract'
+//				name: 'New Contract',
+//                StartDate: '3/25/2015',
+//                tcsiteID: '35',
+//                tositeID: '23',
+//                   towner:'',
+//                    pobox:'',
+//                    numdish:'',
+//                    address:'',
+//                    city:'',
+//                    state:'',
+//                    zip:'',
+//                    EndDate:'',
+//                    longit:'',
+//                    lat:'',
+//                    ntp:'',
+//                    towerbool:'',
+//                    notes:''
 //			});
 //
 //			// Set the URL parameter
@@ -93,13 +125,46 @@
 //		it('$scope.create() with valid form data should send a POST request with the form input values and then locate to new object URL', inject(function(Contracts) {
 //			// Create a sample Contract object
 //			var sampleContractPostData = new Contracts({
-//				name: 'New Contract'
+//				name: 'New Contract',
+//                StartDate: '3/25/2015',
+//                tcsiteID: '35',
+//                tositeID: '23',
+//                    towner:'',
+//                   pobox:'',
+//                   numdish:'',
+//                   address:'',
+//                   city:'',
+//                   state:'',
+//                   zip:'',
+//                   EndDate:'',
+//                   longit:'',
+//                   lat:'',
+//                   ntp:'',
+//                   towerbool:'',
+//                   notes:''
+//
 //			});
 //
 //			// Create a sample Contract response
 //			var sampleContractResponse = new Contracts({
 //				_id: '525cf20451979dea2c000001',
-//				name: 'New Contract'
+//				name: 'New Contract',
+//                StartDate: '3/25/2015',
+//                tcsiteID: '35',
+//                tositeID: '23',
+//                  towner:'',
+//                   pobox:'',
+//                   numdish:'',
+//                   address:'',
+//                   city:'',
+//                   state:'',
+//                   zip:'',
+//                   EndDate:'',
+//                   longit:'',
+//                   lat:'',
+//                   ntp:'',
+//                   towerbool:'',
+//                   notes:''
 //			});
 //
 //			// Fixture mock form input values
@@ -123,7 +188,23 @@
 //			// Define a sample Contract put data
 //			var sampleContractPutData = new Contracts({
 //				_id: '525cf20451979dea2c000001',
-//				name: 'New Contract'
+//				name: 'New Contract',
+//                StartDate: '3/25/2015',
+//                tcsiteID: '35',
+//                tositeID: '23',
+//                   towner:'',
+//                   pobox:'',
+//                   numdish:'',
+//                   address:'',
+//                   city:'',
+//                   state:'',
+//                   zip:'',
+//                   EndDate:'',
+//                   longit:'',
+//                   lat:'',
+//                   ntp:'',
+//                   towerbool:'',
+//                   notes:''
 //			});
 //
 //			// Mock Contract in scope
