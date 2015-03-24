@@ -57,7 +57,6 @@ angular.module('calendars').directive('calendars', [
 
 				scope.select = function (day) {
 					scope.selected = day.date;
-
 				};
 
 				scope.next = function () {
