@@ -124,8 +124,9 @@ describe('AreaCommunications Project', function() {
     it('should be able to create new users', function() {
         //element(by.linkText('Area Communications')).click();
         //element(by.linkText('Users')).click();
+        browser.sleep(2000);
         element(by.id('newUser')).click();
-
+        browser.sleep(2000);
         element(by.model('credentials.firstName')).sendKeys('Sangeetha');
         element(by.model('credentials.lastName')).sendKeys('Matchanickal');
         element(by.model('credentials.email')).sendKeys('test@test.com');
@@ -160,7 +161,7 @@ describe('AreaCommunications Project', function() {
         element(by.model('customer.username')).sendKeys('updateUser');
 
         element(by.id('editButton')).click();
-        browser.sleep(1000);
+        browser.sleep(2000);
         //browser.ignoreSynchronization = true;
 
 
