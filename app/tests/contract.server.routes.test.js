@@ -79,11 +79,11 @@ describe('Contract CRUD tests', function() {
 								// Set assertions
 								//(contracts[0].user._id).should.equal(userId);
 								(contracts[0].name).should.match('Contract Name');
-<<<<<<< Updated upstream
+
                                 //(contracts[0].StartDate).should.match('2015-03-25T07:00:00.000Z');
-=======
+
                                 // (contracts[0].StartDate).should.match('2015-03-25T07:00:00.000Z');
->>>>>>> Stashed changes
+
                                 (contracts[0].tcsiteID).should.match('12');
                                 (contracts[0].tositeID).should.match('34');
 

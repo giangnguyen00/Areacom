@@ -103,6 +103,7 @@ describe('AreaCommunications Project', function() {
 
     // working
     it('should be able to delete contracts', function() {
+        browser.sleep(2000);
         element(by.id('delete')).click();
         browser.ignoreSynchronization = true;
         browser.sleep(2000);
