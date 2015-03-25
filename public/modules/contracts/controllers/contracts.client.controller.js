@@ -87,14 +87,13 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 			if ( contract ) { 
 				contract.$remove();
 
-				for (var i in $scope.contracts) {
-					if ($scope.contracts [i] === contract) {
-						$scope.contracts.splice(i, 1);
+				for (var i in this.contracts) {
+					if (this.contracts [i] === contract) {
+						this.contracts.splice(i, 1);
 					}
 				}
 			} else {
-				$scope.contract.$remove(function() {
-					$location.path('contracts');
+				this.contract.$remove(function() {
 				});
 			}
 		};
