@@ -27,11 +27,11 @@ angular.module('calendars').controller('CalendarsController', ['$scope', 'Contra
             });
             return result;
         };
-        $scope.$on("remove Contract", function(event, data){
-            console.log(data);
-            $scope.contracts = data;
+        // $scope.$on("remove Contract", function(event, data){
+        //     console.log(data);
+        //     $scope.contracts = data;
             
-        });
+        // });
 
         //Open Modal Window to view and update contract
         this.openModal = function (size, selectedContract) {

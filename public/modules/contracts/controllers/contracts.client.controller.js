@@ -1,8 +1,8 @@
 'use strict';
 
 // Contracts controller
-angular.module('contracts').controller('ContractsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Contracts', '$rootScope',
-	function($scope, $stateParams, $location, Authentication, Contracts, $rootScope) {
+angular.module('contracts').controller('ContractsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Contracts',
+	function($scope, $stateParams, $location, Authentication, Contracts) {
 		$scope.authentication = Authentication;
 		this.contracts= Contracts.query();
 		// Create new Contract
@@ -96,8 +96,8 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 				this.contract.$remove(function() {
 				});
 			}
-			$scope.find();
-			$rootScope.$broadcast("remove Contract", $scope.contracts);
+			// $scope.find();
+			// $rootScope.$broadcast("remove Contract", $scope.contracts);
 			
 		};
 
@@ -114,11 +114,9 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 
 		// Find a list of Contracts
 		$scope.find = function() {
-			console.log("In find()");
-			$scope.contracts = Contracts.query().$promise.then(function(data){
-			});
-			
-
+			$scope.contracts = Contracts.query();
+			// $scope.contracts = Contracts.query().$promise.then(function(data){
+			// });
 		};
 
 		// Find existing Contract
