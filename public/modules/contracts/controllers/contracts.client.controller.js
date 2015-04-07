@@ -1,8 +1,8 @@
 'use strict';
 
 // Contracts controller
-angular.module('contracts').controller('ContractsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Contracts',
-	function($scope, $stateParams, $location, Authentication, Contracts) {
+angular.module('contracts').controller('ContractsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Contracts', '$rootScope',
+	function($scope, $stateParams, $location, Authentication, Contracts, $rootScope) {
 		$scope.authentication = Authentication;
 		this.contracts= Contracts.query();
 		// Create new Contract
@@ -96,6 +96,9 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 				this.contract.$remove(function() {
 				});
 			}
+			$scope.find();
+			$rootScope.$broadcast("remove Contract", $scope.contracts);
+			
 		};
 
 		// Update existing contract from modal View from Calendar
@@ -111,7 +114,11 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 
 		// Find a list of Contracts
 		$scope.find = function() {
-			$scope.contracts = Contracts.query();
+			console.log("In find()");
+			$scope.contracts = Contracts.query().$promise.then(function(data){
+			});
+			
+
 		};
 
 		// Find existing Contract

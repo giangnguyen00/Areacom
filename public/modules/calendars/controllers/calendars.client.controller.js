@@ -1,8 +1,8 @@
 'use strict';
 
 // Calendars controller
-angular.module('calendars').controller('CalendarsController', ['$scope', 'Contracts', '$modal', '$log',
-	function($scope, Contracts, $modal, $log) {
+angular.module('calendars').controller('CalendarsController', ['$scope', 'Contracts', '$modal', '$log', '$rootScope',
+	function($scope, Contracts, $modal, $log, $rootScope) {
 		// Controller Logic
 		// ...
 		$scope.day = moment();
@@ -10,6 +10,7 @@ angular.module('calendars').controller('CalendarsController', ['$scope', 'Contra
         $scope.find = function() {
             $scope.contracts = Contracts.query();
         };
+
         $scope.dateMatch = function(day, contract){
             return moment(day).format("MM/DD/YYYY") == moment(contract.StartDate).format("MM/DD/YYYY");
         }
@@ -26,6 +27,11 @@ angular.module('calendars').controller('CalendarsController', ['$scope', 'Contra
             });
             return result;
         };
+        $scope.$on("remove Contract", function(event, data){
+            console.log(data);
+            $scope.contracts = data;
+            
+        });
 
         //Open Modal Window to view and update contract
         this.openModal = function (size, selectedContract) {
