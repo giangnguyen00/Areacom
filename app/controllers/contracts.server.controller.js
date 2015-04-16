@@ -14,6 +14,8 @@ var mongoose = require('mongoose'),
 exports.create = function(req, res) {
 	var contract = new Contract(req.body);
 	contract.user = req.user;
+	contract.location = [req.body.longit, req.body.lat];
+	contract.title = req.body.name;
 
 	contract.save(function(err) {
 		if (err) {

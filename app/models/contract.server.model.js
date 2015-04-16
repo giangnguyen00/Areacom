@@ -16,6 +16,12 @@ var ContractSchema = new Schema({
 		required: 'Please fill Contract name',
 		trim: true
 	},
+	title: {
+		type: String,
+		default: '',
+		required: 'Please fill Contract name',
+		trim: true
+	},
 
 	created: {
 		type: Date,
@@ -74,14 +80,9 @@ var ContractSchema = new Schema({
 		type: Date,
 		default: ''
 	},
-	longit: {
-		type: String,
-		default: ''
-	},
-	lat: {
-		type: String,
-		default: ''
-	},
+
+	location: [],
+
 	ntp: {
 		type: Boolean,
 		default: ''

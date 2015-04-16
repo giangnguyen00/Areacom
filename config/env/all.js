@@ -45,7 +45,8 @@ module.exports = {
             css: [
                 'public/lib/bootstrap/dist/css/bootstrap.css',
                 'public/lib/bootstrap/dist/css/bootstrap-theme.css',
-                'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'
+                'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
+				'leaflet.css'
             ],
             js: [
                 'public/lib/angular/angular.js',
@@ -55,6 +56,8 @@ module.exports = {
                 'public/lib/angular-ui-utils/ui-utils.js',
                 'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
                 'public/lib/moment/moment.js',
+				'leaflet.js',
+				'angular-leaflet-directive.min.js',
                 '//maps.googleapis.com/maps/api/js?sensor=false',
                 'public/lib/ngmap/build/scripts/ng-map.min.js'
             ]

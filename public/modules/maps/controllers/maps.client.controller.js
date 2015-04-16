@@ -1,10 +1,22 @@
 'use strict';
 
 // Maps controller
-angular.module('maps').controller('MapsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Maps',
-	function($scope, $stateParams, $location, Authentication, Maps) {
+angular.module('maps').controller('MapsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Maps','$http',
+	function($scope, $stateParams, $location, Authentication, Maps, $http) {
 		$scope.authentication = Authentication;
+  		$scope.contracts = [];
+		$scope.find = function () {
+			$http.get('/contracts').success(function (response) {
+				$scope.contracts = response; console.log($scope.contracts);
+			}).error(function (response) {
+				$scope.error = repsonse.message;
+			});
+		};
 
+
+	}
+]);
+/*
 		// Create new Map
 		$scope.create = function() {
 			// Create new Map object
@@ -63,4 +75,4 @@ angular.module('maps').controller('MapsController', ['$scope', '$stateParams', '
 			});
 		};
 	}
-]);
+	*/

@@ -1,19 +1,18 @@
 <section data-ng-controller="MapsController" data-ng-init="find()">
     <header data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
     <div class="page-header">
-        <h1>Tower Locations</h1>
+        <h1>Tower Locations </h1>
     </div>
     <div>
-        <map zoom="11" center="[30.16, -81.73]" style="display: block; height: 572px;">
-            <marker
-                    position="[30.16, -81.73]"
-                    title="Area Communications"
+        <map zoom="10" center="[30.16, -81.73]" style="display: block; height: 572px;">
+
+            <marker data-ng-repeat = "marker in contracts"
+
+                    position= "{{marker.location}}"
+                    title="{{marker.title}}"
                     visible="true"
                     ></marker>
-            <shape id="circle" name="circle" stroke-color='#FF0000'
-                   stroke-opacity="0.8"stroke-weight="2"
-                   center="[30.16, -81.73]" radius="8000" editable="true" draggable="true" ></shape>
-            </info-window>
+            </marker>
         </map>
     </div>
 </section>

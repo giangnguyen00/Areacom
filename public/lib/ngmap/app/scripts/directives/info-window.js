@@ -47,6 +47,8 @@ ngMap.directive('infoWindow', ['Attr2Options', '$compile', '$timeout', function(
     if (options.position && 
       !(options.position instanceof google.maps.LatLng)) {
       var address = options.position;
+      console.log("Hello");
+      console.log(options.position);
       delete options.position;
       infoWindow = new google.maps.InfoWindow(options);
       var callback = function() {
@@ -60,6 +62,7 @@ ngMap.directive('infoWindow', ['Attr2Options', '$compile', '$timeout', function(
     /**
      * set events
      */
+
     if (Object.keys(events).length > 0) {
       console.log("infoWindow events", events);
     }
