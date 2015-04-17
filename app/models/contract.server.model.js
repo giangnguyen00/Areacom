@@ -81,7 +81,10 @@ var ContractSchema = new Schema({
 		default: ''
 	},
 
-	location: [],
+	location: {
+		type: [],
+		default:[0]
+	},
 
 	ntp: {
 		type: Boolean,

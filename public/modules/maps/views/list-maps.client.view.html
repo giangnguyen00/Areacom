@@ -4,15 +4,26 @@
         <h1>Tower Locations </h1>
     </div>
     <div>
-        <map zoom="10" center="[30.16, -81.73]" style="display: block; height: 572px;">
+        <map zoom="8" center="[30.16, -81.73]" style="display: block; height: 572px;">
 
-            <marker data-ng-repeat = "marker in contracts"
 
-                    position= "{{marker.location}}"
-                    title="{{marker.title}}"
-                    visible="true"
-                    ></marker>
-            </marker>
+            <div data-ng-repeat = "marker in contracts">
+                <marker id="{{marker.title}}"
+                        position= "{{marker.location}}"
+                        title="{{marker.title}}"
+                        on-click="showInfoWindow(event, 'bar')"
+                        visible="true" >
+                </marker>
+                <info-window id="bar" visible-on-marker="{{marker.title}}">
+                    <div ng-non-bindable="">
+                        <div id="siteNotice"></div>
+                        <h1 id="firstHeading" class="firstHeading">{{marker.title}}</h1>
+                        <div id="bodyContent">
+                            <p><b>Longitude: {{marker.location[0]}}, Latitude: {{marker.location[1]}}</b></p>
+                        </div>
+                    </div>
+                </info-window>
+            </div>
         </map>
     </div>
 </section>

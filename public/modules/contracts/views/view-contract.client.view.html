@@ -1,39 +1,39 @@
-<section data-ng-controller="ContractsController" data-ng-init="findOne()">
-    <header data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
+<section>
+    <header></header>
 	<div class="page-header">
-		<h1 data-ng-bind="contract.name"></h1>
+		<h1 data-ng-bind="selectedContract.name"></h1>
 	</div>
 	<ul class="list-group">
-       	<label for="tcsiteID" data-ng-show="contract.tcsiteID">Tower Cloud Site ID</label>
-        <li data-ng-bind="contract.tcsiteID" id="tcsiteID" class="list-group-item">{{contract.tcsiteID}}</li>
-        <label data-ng-show="contract.address || contract.city || contract.state || contract.zip" for="Address">Address</label>
-        <li data-ng-show="contract.address" data-ng-bind="contract.address" id="Address" class="list-group-item"></li>
-        <li data-ng-show="contract.city" data-ng-bind="contract.city" id="city" class="list-group-item"></li>
-        <li data-ng-show="contract.state" data-ng-bind="contract.state" id="state" class="list-group-item"></li>
-        <li data-ng-show="contract.zip" data-ng-bind="contract.zip" id="zip" class="list-group-item"></li>
-        <label data-ng-show="contract.lat" for="lat">Latitude</label>
-        <li data-ng-show="contract.lat" data-ng-bind="contract.lat" id="lat" class="list-group-item"></li>
-        <label for="longit" data-ng-show="contract.longit">Longitude</label>
-        <li data-ng-show="contract.longit" data-ng-bind="contract.longit" id="longit" class="list-group-item" ></li>
-        <label for="tositeID" data-ng-show="contract.tositeID">Tower Owner Site ID</label>
-        <li data-ng-show="contract.tositeID" data-ng-bind="contract.tositeID" id="tositeID" class="list-group-item"></li>
-        <label for="towner" data-ng-show="contract.towner">Tower Owner</label>
-        <li data-ng-show="contract.towner" data-ng-bind="contract.towner" id="towner" class="list-group-item"></li>
-        <label for="pobox" data-ng-show="contract.pobox">P.O. #</label>
-        <li data-ng-show="contract.pobox" data-ng-bind="contract.pobox" id="pobox" class="list-group-item"></li>
-        <label for="numdish" data-ng-show="contract.numdish">Number of Dishes</label>
-        <li data-ng-show="contract.numdish" data-ng-bind="contract.numdish" id="numdish" class="list-group-item"></li>
-        <label for="StartDate" data-ng-show="contract.StartDate">Start Date</label>
-        <li type="date" data-ng-show="contract.StartDate" data-ng-bind="contract.StartDate" id="StartDate" class="list-group-item" ></li>
-        <label for="EndDate" data-ng-show="contract.EndDate">End Date</label>
-        <li type="date" data-ng-show="contract.EndDate" data-ng-bind="contract.EndDate" id="EndDate" class="list-group-item"></li>
-        <li data-ng-show="contract.ntp">NTP</li>                
-        <li data-ng-show="contract.towerbool">Tower</li>
-   		<label for="notes" data-ng-show="contract.notes">Notes</label>
-    	<li class="list-group-item" data-ng-show="contract.notes" data-ng-bind="contract.notes"id="notes" ></li>
+       	<label for="tcsiteID" data-ng-show="selectedContract.tcsiteID">Tower Cloud Site ID</label>
+        <li data-ng-bind="selectedContract.tcsiteID" id="tcsiteID" class="list-group-item">{{selectedContract.tcsiteID}}</li>
+        <label data-ng-show="selectedContract.address || selectedContract.city || selectedContract.state || selectedContract.zip" for="Address">Address</label>
+        <li data-ng-show="selectedContract.address" data-ng-bind="selectedContract.address" id="Address" class="list-group-item"></li>
+        <li data-ng-show="selectedContract.city" data-ng-bind="selectedContract.city" id="city" class="list-group-item"></li>
+        <li data-ng-show="selectedContract.state" data-ng-bind="selectedContract.state" id="state" class="list-group-item"></li>
+        <li data-ng-show="selectedContract.zip" data-ng-bind="selectedContract.zip" id="zip" class="list-group-item"></li>
+        <label data-ng-show="selectedContract.lat" for="lat">Latitude</label>
+        <li data-ng-show="selectedContract.lat" data-ng-bind="selectedContract.lat" id="lat" class="list-group-item"></li>
+        <label for="longit" data-ng-show="selectedContract.longit">Longitude</label>
+        <li data-ng-show="selectedContract.longit" data-ng-bind="selectedContract.longit" id="longit" class="list-group-item" ></li>
+        <label for="tositeID" data-ng-show="selectedContract.tositeID">Tower Owner Site ID</label>
+        <li data-ng-show="selectedContract.tositeID" data-ng-bind="selectedContract.tositeID" id="tositeID" class="list-group-item"></li>
+        <label for="towner" data-ng-show="selectedContract.towner">Tower Owner</label>
+        <li data-ng-show="selectedContract.towner" data-ng-bind="selectedContract.towner" id="towner" class="list-group-item"></li>
+        <label for="pobox" data-ng-show="selectedContract.pobox">P.O. #</label>
+        <li data-ng-show="selectedContract.pobox" data-ng-bind="selectedContract.pobox" id="pobox" class="list-group-item"></li>
+        <label for="numdish" data-ng-show="selectedContract.numdish">Number of Dishes</label>
+        <li data-ng-show="selectedContract.numdish" data-ng-bind="selectedContract.numdish" id="numdish" class="list-group-item"></li>
+        <label for="StartDate" data-ng-show="selectedContract.StartDate">Start Date</label>
+        <li type="date" data-ng-show="selectedContract.StartDate" data-ng-bind="selectedContract.StartDate" id="StartDate" class="list-group-item" ></li>
+        <label for="EndDate" data-ng-show="selectedContract.EndDate">End Date</label>
+        <li type="date" data-ng-show="selectedContract.EndDate" data-ng-bind="selectedContract.EndDate" id="EndDate" class="list-group-item"></li>
+        <li data-ng-show="selectedContract.ntp">NTP</li>
+        <li data-ng-show="selectedContract.towerbool">Tower</li>
+   		<label for="notes" data-ng-show="selectedContract.notes">Notes</label>
+    	<li class="list-group-item" data-ng-show="selectedContract.notes" data-ng-bind="selectedContract.notes"id="notes" ></li>
     </ul>
-	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == contract.user._id))">
-		<a class="btn btn-primary" href="/#!/contracts/{{contract._id}}/edit">
+	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == selectedContract.user._id))">
+		<a class="btn btn-primary" href="/#!/contracts/{{selectedContract._id}}/edit">
 			<i class="glyphicon glyphicon-edit" id="list"></i>
 		</a>
 		<a class="btn btn-primary" data-ng-click="remove();">
@@ -43,9 +43,9 @@
 	<small>
 		<em class="text-muted">
 			Posted on
-			<span data-ng-bind="contract.created | date:'mediumDate'"></span>
+			<span data-ng-bind="selectedContract.created | date:'mediumDate'"></span>
 			by
-			<span data-ng-bind="contract.user.displayName"></span>
+			<span data-ng-bind="selectedContract.user.displayName"></span>
 		</em>
 	</small>
 </section>

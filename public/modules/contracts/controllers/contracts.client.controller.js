@@ -76,12 +76,17 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 			var contract = $scope.contract;
 
 			contract.$update(function() {
-				$location.path('contracts/' + contract._id);
+				$location.path('contracts');
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});
 		};
-
+		$scope.selectedContract = {};
+		$scope.currentView = function(view){
+			$scope.showView = true;
+			$scope.selectedContract = view;
+		};
+		//
 		this.removeContractFromModal = function(removedContract) {
 			var contract = removedContract
 			if ( contract ) { 

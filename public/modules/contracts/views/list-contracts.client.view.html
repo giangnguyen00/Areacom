@@ -1,4 +1,4 @@
-<section data-ng-controller="ContractsController" data-ng-init="find()">
+<section data-ng-controller="ContractsController" data-ng-init="find(); showView=false">
     <header data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
     <div class="page-header h">
         <h1>Contracts</h1>
@@ -19,9 +19,9 @@
     </div>
     </div>
     </br>
-    <div class="list-group">
-        <a data-ng-repeat="contract in contracts | filter:searchText" data-ng-href="#!/contracts/{{contract._id}}" class="list-group-item">
-            <h4 class="list-group-item-heading" data-ng-bind="contract.name"></h4>
+    <div class="list-group col-sm-4">
+        <a data-ng-repeat="contract in contracts | filter:searchText" ng-click = "currentView(contract)" class="list-group-item">
+            <h4 class="list-group-item-heading">{{contract.name}} ID: {{contract._id}}</h4>
             <small class="list-group-item-text">
 				Posted on
 				<span data-ng-bind="contract.created | date:'medium'"></span>
@@ -29,6 +29,8 @@
 				<span data-ng-bind="contract.user.displayName"></span>
 			</small>
         </a>
+    </div>
+    <div class = "list-group col-sm-8" ng-init = "contract = selectedContract" ng-show="showView" ng-include = "'/modules/contracts/views/view-contract.client.view.html'">
     </div>
 
 </section>

@@ -11,7 +11,7 @@ angular.module('maps').directive('maps', [
             },
             link: function (scope) {
 
-
+/*
                 scope.hasContract = function(day) {
                     var lat = 0;
                     var longit = 0;
@@ -26,6 +26,7 @@ angular.module('maps').directive('maps', [
                     });
                     return result;
                 };
+                */
 
             }
         };
