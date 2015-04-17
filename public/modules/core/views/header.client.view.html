@@ -11,7 +11,7 @@
     <nav class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation">
         <ul class="nav navbar-nav" data-ng-if="menu.shouldRender(authentication.user);">
             <li>
-            <a href="/#!/contracts"> Contracts </a>
+            <a href="/#!/dashboard/contracts"> Contracts </a>
             </li>
             <li data-ng-hide="authentication.user.roles[0]=='user'">
                 <a href="/#!/customers"> Users </a>
@@ -45,8 +45,8 @@
                         <a href="/#!/settings/password">Change Password</a>
                     </li>
                     <li class="divider"></li>
-                    <li>
-                        <a href="/#!/auth/signout">Signout</a>
+                    <li data-ng-controller = "AuthenticationController">
+                        <a href="" data-ng-click = "signout()">Signout</a>
                     </li>
                 </ul>
             </li>

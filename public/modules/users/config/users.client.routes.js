@@ -43,3 +43,15 @@ angular.module('users').config(['$stateProvider',
 		});
 	}
 ]);
+
+angular.module('users').run(function($state, $location, $rootScope, Authentication) {
+    $rootScope.$on('$locationChangeStart', function(event, next, current) {
+    	var auth = Authentication;
+    	console.log(auth.user);
+    	console.log(next.substring(next.length-4, next.length));
+    	console.log(next.substring(next.length-4, next.length) != '/#!/' && !auth.user);
+        if((next.substring(next.length-4, next.length) != '/#!/') && !auth.user) {
+        	$state.go('home');
+        }
+    });
+});
