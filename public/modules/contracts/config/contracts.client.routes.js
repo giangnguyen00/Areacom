@@ -24,16 +24,3 @@ angular.module('contracts').config(['$stateProvider',
 	}
 ]);
 
-/*angular.module('contracts').run(['$state', '$rootScope', 'Authentication', function($state, $rootScope, Authentication) {
-    $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
-    	$scope.authentication = Authentication;
-        if (!authentication.user) {
-            // whatever you want to do
-            event.preventDefault();//prevent change​​
-
-            //$state.go('/');
-        };
-        ​// more code here
-
-    });
-}]);*/
