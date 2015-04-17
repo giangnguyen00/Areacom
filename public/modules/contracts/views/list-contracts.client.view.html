@@ -21,7 +21,7 @@
     </br>
     <div class="list-group col-sm-4">
         <a data-ng-repeat="contract in contracts | filter:searchText" ng-click = "currentView(contract)" class="list-group-item">
-            <h4 class="list-group-item-heading">{{contract.name}} ID: {{contract._id}}</h4>
+            <h4 class="list-group-item-heading">{{contract.name}}</h4>
             <small class="list-group-item-text">
 				Posted on
 				<span data-ng-bind="contract.created | date:'medium'"></span>
