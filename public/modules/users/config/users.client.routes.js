@@ -49,9 +49,9 @@ angular.module('users').run(function($state, $location, $rootScope, Authenticati
     	var auth = Authentication;
     	console.log(auth.user);
     	console.log(next.substring(next.length-4, next.length));
-    	console.log(next.substring(next.length-4, next.length) != '/#!/' && !auth.user);
-        if((next.substring(next.length-4, next.length) != '/#!/') && !auth.user) {
-        	$state.go('home');
+    	console.log(next.substring(next.length-4, next.length) != '/#!/' && auth.user == "");
+        if((next.substring(next.length-4, next.length) != '/#!/') && auth.user == '') {
+        	$location.path('/');
         }
     });
 });
