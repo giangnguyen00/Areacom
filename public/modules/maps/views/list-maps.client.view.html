@@ -19,7 +19,10 @@
                         <div id="siteNotice"></div>
                         <h1 id="firstHeading" class="firstHeading">{{marker.title}}</h1>
                         <div id="bodyContent">
-                            <p><b>Latitude: {{marker.location[0]}}, Longitude: {{marker.location[1]}}</b></p>
+                            <p><b>Owner: {{marker.towner}}</b></p>
+                            <p><b>Tower Cloud Site ID: {{marker.tcsiteID}}</b></p>
+                            <p><b>Notes: {{marker.notes}}</b></p>
+                            <p>Latitude: {{marker.location[0]}}, Longitude: {{marker.location[1]}}</p>
                         </div>
                     </div>
                 </info-window>

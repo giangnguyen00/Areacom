@@ -32,13 +32,11 @@
    		<label for="notes" data-ng-show="selectedContract.notes">Notes</label>
     	<li class="list-group-item" data-ng-show="selectedContract.notes" data-ng-bind="selectedContract.notes"id="notes" ></li>
     </ul>
-	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == selectedContract.user._id))">
+	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == selectedContract.user._id))" >
 		<a class="btn btn-primary" href="/#!/contracts/{{selectedContract._id}}/edit">
 			<i class="glyphicon glyphicon-edit" id="list"></i>
 		</a>
-		<a class="btn btn-primary" data-ng-click="remove();">
-			<i class="glyphicon glyphicon-trash" id="delete"></i>
-		</a>
+		<!-->
 	</div>
 	<small>
 		<em class="text-muted">
