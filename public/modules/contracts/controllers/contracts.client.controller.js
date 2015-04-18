@@ -30,7 +30,7 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 
 			// Redirect after save
 			contract.$save(function(response) {
-				$location.path('contracts/' + response._id);
+				$location.path('contracts');
 
 				// Clear form fields
 				$scope.name = '';
