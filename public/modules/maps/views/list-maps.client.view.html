@@ -9,7 +9,7 @@
 
             <div data-ng-repeat = "marker in contracts">
                 <marker id="{{marker.title}}"
-                        position= "{{marker.location}}"
+                        position= "[{{marker.location[1]}},{{marker.location[0]}}]"
                         title="{{marker.title}}"
                         on-click="showInfoWindow(event, 'bar')"
                         visible="true" >
@@ -19,7 +19,10 @@
                         <div id="siteNotice"></div>
                         <h1 id="firstHeading" class="firstHeading">{{marker.title}}</h1>
                         <div id="bodyContent">
-                            <p><b>Longitude: {{marker.location[0]}}, Latitude: {{marker.location[1]}}</b></p>
+                            <p><b>Owner: {{marker.towner}}</b></p>
+                            <p><b>Tower Cloud Site ID: {{marker.tcsiteID}}</b></p>
+                            <p><b>Notes: {{marker.notes}}</b></p>
+                            <p>Latitude: {{marker.location[1]}}, Longitude: {{marker.location[0]}}</p>
                         </div>
                     </div>
                 </info-window>
