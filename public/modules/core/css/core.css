@@ -43,3 +43,38 @@ body.ng-cloak
 	color: #686868 !important;
 }
 
+section[data-ng-controller="ContractsController"] .form-group
+{
+	width: 50%;
+	float: left;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 5px;
+}
+section[data-ng-controller="ContractsController"] .form-group input
+{
+	width: 95% !important;
+}
+
+.modal-dialog
+{
+	width: 800px !important;
+}
+.modal-dialog label
+{
+	width: 25%;
+	float: left;
+	margin-top: 5px;
+}
+.modal-dialog label[for="notes"]
+{
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+}
+.modal-dialog .controls
+{
+	width: 75%;
+	float: left;
+	margin-bottom: 2.5px;
+}
