@@ -17,6 +17,7 @@
 body.ng-cloak
 {
 	display: block;
+	background: blue;
 }
 /* Gabe */
 .ng-scope[data-ui-view="name"] .col-sm-8
