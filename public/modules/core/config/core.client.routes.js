@@ -25,6 +25,15 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 
       		}
 		}).
+		state('main.map',{
+			views: {	
+				url: "/test",
+        		'name':{ 
+        			templateUrl: 'modules/maps/views/list-maps.client.view.html'	
+        		}
+
+      		}
+		}).
 		state('main.list', {
 			views: {
 				url: "/test",
