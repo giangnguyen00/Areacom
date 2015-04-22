@@ -6,79 +6,79 @@
     <div class="col-md-12">
         <form class="form-horizontal" data-ng-submit="update()" novalidate>
             <fieldset>
-                <div class="form-group">
-                    <label class="control-label" for="name">Name</label>
-                    <div class="controls">
+                <div class="controls">
+                    <div class="form-group" style="float: left;">
+                        <label class="control-label" for="name">Name</label>
                         <input type="text" data-ng-model="contract.name" id="name" class="form-control" placeholder="Name" required>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label" for="tcsiteID">To\we Cloud Site ID</label>
-                        <input type="text" data-ng-model="contract.tcsiteID" id="tcsiteID" class="form-control" placeholder="Site ID" required>
+                    <div class="form-group" style="float: left;">
+                        <label class="control-label" for="tcsiteID">Tower Cloud Site ID</label>
+                        <input type="text" data-ng-model="contract.tcsiteID" id="tcsiteID" class="form-control" placeholder="Site ID" required style="width:100% !important;">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="float: left;">
                         <label class="control-label" for="Address">Address</label>
                         <input type="text" data-ng-model="contract.address" id="Address" class="form-control" placeholder="Address..." >
                         <input type="text" data-ng-model="contract.city" id="city" class="form-control" placeholder="City..." >
                         <input type="text" data-ng-model="contract.state" id="state" class="form-control" placeholder="State..." >
                         <input type="text" data-ng-model="contract.zip" id="zip" class="form-control" placeholder="Zip Code..." >
                     </div>
-                    <div class="form-group">
-                        <div class="col-xs-2">
+                    <div class="form-group" style="float: left; width: 25%;">
+                        <div class="col-xs-12" style="padding: 0;">
                             <label class="control-label" for="lat">Latitude</label>
-                            <input type="text" data-ng-model="contract.location[1]" id="lat" class="form-control" placeholder="Latitude" >
+                            <input type="text" data-ng-model="contract.location[1]" id="lat" class="form-control" placeholder="Latitude">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-xs-2">
+                    <div class="form-group" style="float: left; width: 25%;">
+                        <div class="col-xs-12" style="padding: 0;">
                             <label class="control-label" for="longit">Longitude</label>
-                            <input type="text" data-ng-model="contract.location[0]" id="longit" class="form-control" placeholder="Longitude" >
+                            <input type="text" data-ng-model="contract.location[0]" id="longit" class="form-control" placeholder="Longitude" style="width: 100% !important;">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="float: left; margin-top: 26px;">
                         <label class="control-label" for="tositeID">Tower Owner Site ID</label>
-                        <input type="text" data-ng-model="contract.tositeID" id="tositeID" class="form-control" placeholder="Site ID" required>
+                        <input type="text" data-ng-model="contract.tositeID" id="tositeID" class="form-control" placeholder="Site ID" required style="width: 100% !important;">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="float: left;">
                         <label class="control-label" for="towner">Tower Owner</label>
                         <input type="text" data-ng-model="contract.towner" id="towner" class="form-control" placeholder="Owner" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="float: left;">
                         <label class="control-label" for="pobox">P.O. #</label>
-                        <input type="text" data-ng-model="contract.pobox" id="pobox" class="form-control" placeholder="P.O. #" required>
+                        <input type="text" data-ng-model="contract.pobox" id="pobox" class="form-control" placeholder="P.O. #" required style="width: 100% !important;">
                     </div>
-                    <div class="form-group">
-                        <div class="col-xs-2">
+                    <div class="form-group" style="float: left; width: 33.33%;">
+                        <div class="col-xs-12" style="padding: 0;">
                             <label class="control-label" for="numdish">Number of Dishes</label>
                             <input type="text" data-ng-model="contract.numdish" id="numdish" class="form-control" placeholder="# of Dishes" >
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-xs-2">
+                    <div class="form-group" style="float: left; width: 33.33%;">
+                        <div class="col-xs-12" style="padding: 0;">
                             <label class="control-label" for="StartDate">Start Date</label>
-                            <input type="date" data-ng-model="contract.StartDate" id="StartDate" class="form-control" placeholder="MM/DD/YYYY" >
+                            <input type="date" data-ng-model="contract.StartDate" id="StartDate" class="form-control" placeholder="MM/DD/YYYY" required>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-xs-2">
+                    <div class="form-group" style="float: left; width: 33.33%;">
+                        <div class="col-xs-12" style="padding: 0;">
                             <label class="control-label" for="EndDate">End Date</label>
-                            <input type="date" data-ng-model="contract.EndDate" id="EndDate" class="form-control" placeholder="MM/DD/YYYY" >
+                            <input type="date" data-ng-model="contract.EndDate" id="EndDate" class="form-control" placeholder="MM/DD/YYYY" style="width: 100% !important;">
                         </div>
                     </div>
-                    <div class="checkbox">
+                    <div class="checkbox" style="float: left;">
                         <label>
                           <input type="checkbox" data-ng-model="contract.ntp"> NTP
                         </label>
                     </div>
-                    <div class="checkbox">
+                    <div class="checkbox" style="float: left; margin-left: 25px;">
                         <label>
                           <input type="checkbox" data-ng-model="contract.towerbool"> Is this a tower?
                         </label>
                     </div>
-                    <label class="control-label" for="notes">Notes</label>
-                    <textarea class="form-control"  rows="3" data-ng-model="contract.notes" id="notes" placeholder="Add any notes here..."></textarea>
+                    <label class="control-label" for="notes"></label>
+                    <textarea class="form-control"  rows="3" data-ng-model="contract.notes" id="notes" placeholder="Add any notes here..." style="margin-top: 10px;"></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Update" class="btn btn-default" id="update">
+                    <input type="submit" value="Update" class="btn btn-default" id="update" style="width: 100px !important;">
                     <a class="btn btn-primary" data-ng-click="remove();">
                         <i class="glyphicon glyphicon-trash" id="delete"></i>
                     </a>
