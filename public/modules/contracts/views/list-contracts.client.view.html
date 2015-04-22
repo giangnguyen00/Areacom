@@ -1,36 +1,38 @@
 <section data-ng-controller="ContractsController" data-ng-init="find(); showView=false">
     <header data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
-    <div class="page-header h">
+    <!--<div class="page-header h">
         <h1>Contracts</h1>
+    </div>-->
+    <div class="col-sm-3" style="float:right; padding:0 !important; left:-14px; width:24.775%; height: 572px; overflow-y: scroll;">
+        <div class="col-xs-12" style="padding:0;">
+            <div class="input-group input-group-lg" style="border-radius: 0;">
+                <input type="text" class="form-control" placeholder="Search..." data-ng-model="searchText" style="border-radius: 0;">
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger" type="button" style="border-radius: 0;">Go!</button>
+                    </span>
+            </div><!-- /input-group -->
+        </div>
+        <div class="col-xs-12 text-center" style="padding: 0;">
+            <a href="#!/contracts/create"><button type="button" class="btn btn-danger text-center" style="border-radius: 0; width: 99.5%;">
+                New Contract
+            </button></a>
+        </div>
+
+        <div class="list-group col-xs-12" style="padding-right:0 !important;">
+            <a data-ng-repeat="contract in contracts | filter:searchText" ng-click = "currentView(contract)" class="list-group-item">
+                <h4 class="list-group-item-heading">{{contract.name}}</h4>
+                <small class="list-group-item-text">
+                    Posted on
+                    <span data-ng-bind="contract.created | date:'medium'"></span>
+                    by
+                    <span data-ng-bind="contract.user.displayName"></span>
+                </small>
+            </a>
+        </div>
     </div>
-    <div class="row">
-    <div class="col-xs-12 col-sm-8">
-        <div class="input-group input-group-lg">
-            <input type="text" class="form-control" placeholder="Search..." data-ng-model="searchText">
-                <span class="input-group-btn">
-                    <button class="btn btn-danger" type="button">Go!</button>
-                </span>
-        </div><!-- /input-group -->
-    </div>
-    <div class="col-xs-12 col-sm-4 text-center">
-        <a href="#!/contracts/create"><button type="button" class="btn btn-danger text-center">
-            New Contract
-        </button></a>
-    </div>
-    </div>
-    </br>
-    <div class="list-group col-sm-4">
-        <a data-ng-repeat="contract in contracts | filter:searchText" ng-click = "currentView(contract)" class="list-group-item">
-            <h4 class="list-group-item-heading">{{contract.name}}</h4>
-            <small class="list-group-item-text">
-				Posted on
-				<span data-ng-bind="contract.created | date:'medium'"></span>
-				by
-				<span data-ng-bind="contract.user.displayName"></span>
-			</small>
-        </a>
-    </div>
-    <div class = "list-group col-sm-8" ng-init = "contract = selectedContract" ng-show="showView" ng-include = "'/modules/contracts/views/view-contract.client.view.html'">
+    
+    
+    <div class = "list-group col-sm-9" ng-init = "contract = selectedContract" ng-show="showView" ng-include = "'/modules/contracts/views/view-contract.client.view.html'" style="padding: 0; width: 74%; height: 572px; overflow-y: scroll;">
     </div>
 
 </section>
