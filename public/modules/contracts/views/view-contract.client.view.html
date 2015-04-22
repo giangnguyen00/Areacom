@@ -11,10 +11,10 @@
         <li data-ng-show="selectedContract.city" data-ng-bind="selectedContract.city" id="city" class="list-group-item"></li>
         <li data-ng-show="selectedContract.state" data-ng-bind="selectedContract.state" id="state" class="list-group-item"></li>
         <li data-ng-show="selectedContract.zip" data-ng-bind="selectedContract.zip" id="zip" class="list-group-item"></li>
-        <label data-ng-show="selectedContract.lat" for="lat">Latitude</label>
-        <li data-ng-show="selectedContract.lat" data-ng-bind="selectedContract.lat" id="lat" class="list-group-item"></li>
-        <label for="longit" data-ng-show="selectedContract.longit">Longitude</label>
-        <li data-ng-show="selectedContract.longit" data-ng-bind="selectedContract.longit" id="longit" class="list-group-item" ></li>
+        <label data-ng-show="selectedContract.location[1]" for="lat">Latitude</label>
+        <li data-ng-show="selectedContract.location[1]" data-ng-bind="selectedContract.location[1]" id="lat" class="list-group-item"></li>
+        <label for="longit" data-ng-show="selectedContract.location[0]">Longitude</label>
+        <li data-ng-show="selectedContract.location[0]" data-ng-bind="selectedContract.location[0]" id="longit" class="list-group-item" ></li>
         <label for="tositeID" data-ng-show="selectedContract.tositeID">Tower Owner Site ID</label>
         <li data-ng-show="selectedContract.tositeID" data-ng-bind="selectedContract.tositeID" id="tositeID" class="list-group-item"></li>
         <label for="towner" data-ng-show="selectedContract.towner">Tower Owner</label>

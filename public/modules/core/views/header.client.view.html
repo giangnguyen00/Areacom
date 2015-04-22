@@ -10,15 +10,19 @@
     </div>
     <nav class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation">
         <ul class="nav navbar-nav" data-ng-if="menu.shouldRender(authentication.user);">
+            <!--
             <li>
             <a href="/#!/contracts"> Contracts </a>
             </li>
+            -->
             <li data-ng-hide="authentication.user.roles[0]=='user'">
                 <a href="/#!/customers"> Users </a>
             </li>
+            <!--
             <li>
                 <a href="/#!/maps"> Map </a>
             </li>
+            -->
         </ul>
         <ul class="nav navbar-nav navbar-right" data-ng-hide="authentication.user">
             <!--<li ui-route="/signup" ng-class="{active: $uiRoute}">-->
