@@ -78,3 +78,8 @@ section[data-ng-controller="ContractsController"] .form-group input
 	float: left;
 	margin-bottom: 2.5px;
 }
+
+.list-group-item
+{
+	cursor: pointer;
+}
