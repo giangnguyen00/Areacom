@@ -30,7 +30,7 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 
 			// Redirect after save
 			contract.$save(function(response) {
-				$location.path('contracts');
+				$location.path('main');
 
 				// Clear form fields
 				$scope.name = '';
@@ -66,7 +66,7 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 				}
 			} else {
 				$scope.contract.$remove(function() {
-					$location.path('contracts');
+					$location.path('main');
 				});
 			}
 		};
@@ -76,7 +76,7 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 			var contract = $scope.contract;
 
 			contract.$update(function() {
-				$location.path('contracts');
+				$location.path('main');
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});
