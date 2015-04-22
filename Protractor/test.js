@@ -119,6 +119,7 @@ describe('AreaCommunications Project', function() {
 
     // working
     it('should be able to search users', function() {
+        browser.sleep(2000);
         element(by.linkText('Area Communications')).click();
         element(by.linkText('Users')).click();
         element(by.model('searchText')).sendKeys('update');
