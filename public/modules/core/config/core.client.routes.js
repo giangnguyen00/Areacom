@@ -34,6 +34,15 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 
       		}
 		}).
+		state('main.contracts',{
+			views: {	
+				url: "/test",
+        		'name':{ 
+        			templateUrl: 'modules/contracts/views/create-contract.client.view.html'	
+        		}
+
+      		}
+		}).
 		state('main.list', {
 			views: {
 				url: "/test",
